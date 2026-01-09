@@ -41,10 +41,15 @@
     font-size: 1.7em;
     font-weight: 700;
   }
+  
+  h4 {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #0B1157;
+  }
 
   /* --- HEADER WITH GRADIENT --- */
   .custom-header {
-    /* The "Breakthrough" Gradient - Subtle sheen */
     background: linear-gradient(135deg, #002BFF 0%, #0020c2 100%);
     color: white;
     padding: 80px 20px;
@@ -140,7 +145,7 @@
     border: 1px solid #eef2f7;
     transition: transform 0.2s;
   }
-  figure:hover { transform: translateY(-2px); } /* Subtle lift effect */
+  figure:hover { transform: translateY(-2px); }
 
   img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
   
@@ -173,7 +178,7 @@
   .custom-footer a { color: #78DCFF; text-decoration: none; font-weight: 600; }
   .custom-footer a:hover { color: white; text-decoration: underline; }
 
-  /* --- PRINT STYLES (For when they click Print) --- */
+  /* --- PRINT STYLES --- */
   @media print {
     .nav-bar, .custom-footer, .print-btn { display: none !important; }
     .custom-header { padding: 30px; background: white; color: #002BFF; border-bottom: 2px solid #002BFF; }
@@ -212,7 +217,7 @@
 
   <button class="print-btn" onclick="window.print()">🖨️ Save as PDF</button>
 
-<div style="border-left: 4px solid #002BFF; padding-left: 15px; margin-bottom: 40px; color: #555; overflow: hidden;">
+  <div style="border-left: 4px solid #002BFF; padding-left: 15px; margin-bottom: 40px; color: #555; overflow: hidden;">
     <img src="profile.jpg" alt="Thomas Knight" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px; float: left; box-shadow: 0 4px 8px rgba(0,0,0,0.1); object-fit: cover;">
     <p style="margin-top: 0;">
       <strong>By Thomas Knight</strong><br>
@@ -240,8 +245,8 @@
   <p>GLP-1 medications activate receptors throughout the body to produce several key effects:</p>
   <ul>
     <li><strong>Regulates Blood Sugar:</strong> It prompts the pancreas to release more insulin when blood sugar levels rise and suppresses glucagon, a hormone that increases sugar production in the liver.</li>
-    <li><strong>Promotes Fullness:</strong> It targets satiety centers in the brain to reduce hunger and "food noise" (persistent thoughts about eating).</li>
-    <li><strong>Slowing Digestion:</strong> It delays gastric emptying, meaning food stays in the stomach longer, which leads to feeling full faster and for longer periods.</li>
+    <li><strong>Promotes Fullness:</strong> It targets satiety centres in the brain to reduce hunger and "food noise" (persistent thoughts about eating).</li>
+    <li><strong>Slows Digestion:</strong> It delays gastric emptying, meaning food stays in the stomach longer, which leads to feeling full faster and for longer periods.</li>
   </ul>
 
   <h3>Common GLP-1 Medications</h3>
@@ -262,7 +267,7 @@
 
   <h3 id="the-science-of-glp-1">The Science of GLP-1</h3>
 
-  <h4>GLP1-peptide</h4>
+  <h4>The GLP-1 Peptide</h4>
   <p>Naturally occurring GLP-1 is a peptide hormone derived from the proglucagon gene. Its structure is defined by its specific amino acid sequence and its three-dimensional shape, which are critical for its biological function.</p>
   
   <p><strong>Secondary and Tertiary Structure</strong><br>
@@ -296,7 +301,7 @@
     <strong>Key Concept:</strong> The receptor's structure is defined by its ability to transition between "closed" inactive states and "extended" active states upon ligand binding.
   </div>
 
-  <p><strong>Signaling Role:</strong> Because it is a transmembrane protein, it can act as a bridge, receiving a signal from the hormone outside the cell and transmitting it to G proteins located on the inside of the cell to trigger a biological response, such as insulin secretion.</p>
+  <p><strong>Signalling Role:</strong> Because it is a transmembrane protein, it can act as a bridge, receiving a signal from the hormone outside the cell and transmitting it to G proteins located on the inside of the cell to trigger a biological response, such as insulin secretion.</p>
   <p><strong>Localisation:</strong> It is primarily found on the surface (plasma membrane) of various cell types, including pancreatic beta cells and certain neurons in the brain.</p>
 
   <h3>Main Structural Components</h3>
@@ -365,7 +370,7 @@
     <li><strong>Comparison to Peptides:</strong> Preclinical and Phase 1 data indicated that danuglipron had a glucose-lowering and weight-loss efficacy comparable to injectable GLP-1 agonists.</li>
   </ul>
 
-  <p>In April 2025, Pfizer officially discontinued the clinical development of danuglipron. The decision followed a single case of potential drug-induced liver injury (DILI) in an asymptomatic participant during dose-optimization studies for a once-daily formulation.</p>
+  <p>In April 2025, Pfizer officially discontinued the clinical development of danuglipron [2]. The decision followed a single case of potential drug-induced liver injury (DILI) in an asymptomatic participant during dose-optimization studies for a once-daily formulation.</p>
 
   <figure>
     <img src="https://github.com/user-attachments/assets/15413f62-6cb3-44f0-8e44-d40449f9ae9b" alt="Danuglipron Bound">
@@ -392,16 +397,16 @@
 
   <figure>
     <img src="https://github.com/user-attachments/assets/879f677e-c173-4d93-8faa-f35ec4a7b9ce" alt="Orforglipron Binding Mechanism">
-    <figcaption>Figure 7. Structural basis for GLP-1 receptor activation by Orforglipron (orange). Source: (2020) Proc Natl Acad Sci U S A 117.</figcaption>
+    <figcaption>Figure 7. Structural basis for GLP-1 receptor activation by Orforglipron (orange). Source: Kawakami et al. [1].</figcaption>
   </figure>
   
   <div style="font-size: 0.85em; color: #666; border-top: 1px solid #eee; padding-top: 20px; margin-top: 60px;">
     <h3 style="font-size:1.3em; margin-top:0;">References</h3>
     <ol style="padding-left:20px;">
-      <li>Kawakami, T., et al. (2020). "Structural basis for GLP-1 receptor activation by LY3502970, an orally active nonpeptide agonist." <em>Proceedings of the National Academy of Sciences</em>, 117(47), 29959-29967.</li>
+      <li>Kawakami, T., et al. (2020). "Structural basis for GLP-1 receptor activation by LY3502970." <em>Proceedings of the National Academy of Sciences</em>, 117(47).</li>
       <li>Pfizer Inc. (2025). "Pfizer Discontinues Development of Twice-Daily Oral GLP-1 Agonist Danuglipron." Press Release.</li>
-      <li>Novo Nordisk. (2021). "Semaglutide 2.4 mg for the Treatment of Obesity: Key Clinical Trials." <em>New England Journal of Medicine</em>.</li>
-      <li>Zhang, Y., et al. (2020). "Cryo-EM structure of the activated GLP-1 receptor in complex with G protein." <em>Nature</em>, 546, 254-258.</li>
+      <li>Wilding, J.P.H., et al. (2021). "Once-Weekly Semaglutide in Adults with Overweight or Obesity." <em>New England Journal of Medicine</em>, 384:989-1002.</li>
+      <li>Zhang, Y., et al. (2017). "Cryo-EM structure of the activated GLP-1 receptor in complex with G protein." <em>Nature</em>, 546, 254-258.</li>
     </ol>
   </div>
 
