@@ -1,22 +1,17 @@
 <style>
-  /* --- 0. THEME OVERRIDE (THE NUCLEAR OPTION) --- */
-  /* This block hides the default GitHub Sidebar and Footer */
+  /* --- 0. THEME OVERRIDE (FORCE FULL WIDTH) --- */
   .wrapper { width: 100% !important; margin: 0 !important; max-width: 100% !important; }
-  header { display: none !important; } /* Hides the default theme sidebar */
-  footer { display: none !important; } /* Hides the default theme footer */
+  header { display: none !important; } /* Hides default GitHub sidebar */
+  footer { display: none !important; } /* Hides default GitHub footer */
   section { width: 100% !important; max-width: 100% !important; padding: 0 !important; display: block !important; }
-  body { background-color: #F7F7F7 !important; }
+  body { background-color: #F7F7F7 !important; margin: 0 !important; padding: 0 !important; }
   
-  /* --- 1. CORE BRANDING (Breakthrough T1D Style) --- */
-  /* We use specific classes now to avoid conflict with the hidden theme elements */
-  
+  /* --- 1. CORE BRANDING --- */
   .custom-body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #333;
     background-color: #F7F7F7;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
     width: 100%;
   }
 
@@ -29,7 +24,6 @@
     border-bottom: 8px solid #0B1157; /* Navy Accent */
     width: 100%;
     box-sizing: border-box;
-    display: block !important; /* Force show despite the header reset above */
   }
 
   .custom-header h1 {
@@ -39,7 +33,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2;
-    color: white; /* Ensure title is white */
+    color: white;
   }
 
   .custom-header p {
@@ -52,7 +46,7 @@
 
   /* --- 3. MAIN CONTENT CONTAINER --- */
   .main-content {
-    max-width: 900px; /* Slightly wider for better reading */
+    max-width: 900px;
     margin: -40px auto 50px; /* Overlap header */
     background: white;
     padding: 60px;
@@ -62,94 +56,9 @@
     z-index: 10;
   }
 
-  /* --- 4. TYPOGRAPHY --- */
-  h1, h2 {
-    color: #0B1157; /* Navy Blue */
-    font-weight: 800;
-    margin-top: 0;
-  }
-
-  h3 {
-    color: #002BFF; /* Electric Blue */
-    font-weight: 700;
-    border-bottom: 3px solid #78DCFF; /* Cyan Highlight */
-    padding-bottom: 8px;
-    margin-top: 50px;
-    font-size: 1.6em;
-  }
-  
-  h4 {
-    color: #0B1157;
-    font-size: 1.2em;
-    margin-top: 30px;
-    font-weight: 700;
-  }
-
-  strong {
-    color: #0B1157;
-  }
-  
-  p, li {
-    font-size: 1.1em; /* Slightly larger text for readability */
-  }
-
-  /* --- 5. INTERACTIVE ELEMENTS --- */
-  a {
-    color: #002BFF;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: border-color 0.2s;
-  }
-  a:hover {
-    border-bottom: 2px solid #002BFF;
-  }
-
-  /* --- 6. IMAGES & CAPTIONS --- */
-  figure {
-    margin: 40px 0;
-    text-align: center;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-  }
-
-  img {
-    border-radius: 4px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    max-width: 100%;
-    height: auto;
-  }
-
-  figcaption {
-    font-size: 0.9em;
-    color: #555;
-    margin-top: 15px;
-    font-style: italic;
-    font-weight: 500;
-  }
-
-  /* --- 7. SPECIAL COMPONENTS --- */
-  .author-card {
-    border-left: 4px solid #002BFF;
-    padding-left: 15px;
-    margin-bottom: 40px;
-    color: #555;
-    font-style: italic;
-    font-size: 1em;
-  }
-
-  .callout-box {
-    background-color: #E6F0FF; /* Very light blue */
-    border-left: 6px solid #002BFF;
-    padding: 25px;
-    margin: 35px 0;
-    border-radius: 0 4px 4px 0;
-    font-size: 1.05em;
-  }
-
+  /* --- 4. NAVIGATION BAR --- */
   .nav-bar {
-    background: #0B1157;
+    background: #0B1157; /* Deep Navy */
     color: white;
     padding: 12px 20px;
     font-size: 0.85em;
@@ -158,24 +67,79 @@
     width: 100%;
     box-sizing: border-box;
   }
+  
+  /* Nav Links Styling */
+  .nav-bar a {
+    color: white !important;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-bar a:hover {
+    color: #78DCFF !important; /* Cyan hover effect */
+    border-bottom: 1px solid #78DCFF;
+  }
 
-  /* Mobile Responsiveness */
+  /* --- 5. TYPOGRAPHY --- */
+  h1, h2, h3, h4 { color: #0B1157; margin-top: 40px; }
+  
+  h3 {
+    color: #002BFF;
+    border-bottom: 3px solid #78DCFF;
+    padding-bottom: 8px;
+    font-size: 1.6em;
+  }
+  
+  /* Standard Links in text */
+  a { color: #002BFF; text-decoration: none; font-weight: bold; }
+  a:hover { text-decoration: underline; }
+
+  /* --- 6. IMAGES & COMPONENTS --- */
+  figure {
+    margin: 40px 0;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+  figcaption { font-size: 0.9em; color: #555; margin-top: 15px; font-style: italic; }
+
+  .callout-box {
+    background-color: #E6F0FF;
+    border-left: 6px solid #002BFF;
+    padding: 25px;
+    margin: 35px 0;
+    font-size: 1.05em;
+  }
+  
+  .author-card {
+    border-left: 4px solid #002BFF;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    color: #555;
+    font-style: italic;
+  }
+
+  /* Mobile Fixes */
   @media (max-width: 768px) {
-    .main-content {
-      padding: 30px 20px;
-      margin-top: 0;
-      width: 90%;
-    }
-    .custom-header { padding: 40px 20px; }
+    .main-content { padding: 30px 20px; margin-top: 0; width: 90%; }
     .custom-header h1 { font-size: 1.8em; }
     .nav-bar { text-align: center; }
+    .nav-bar a { display: inline-block; margin: 0 5px; font-size: 0.8em; }
   }
 </style>
 
 <div class="custom-body">
 
 <div class="nav-bar">
-  <b>BREAKTHROUGH T1D</b> &nbsp;|&nbsp; RESEARCH &nbsp;|&nbsp; GET INVOLVED &nbsp;|&nbsp; DONATE
+  <a href="https://breakthrought1d.org.uk/" target="_blank"><b>BREAKTHROUGH T1D UK</b></a> &nbsp;|&nbsp; 
+  <a href="https://breakthrought1d.org.uk/about-breakthrough-t1d-uk-and-our-impact/our-research/" target="_blank">RESEARCH</a> &nbsp;|&nbsp; 
+  <a href="https://breakthrought1d.org.uk/how-to-help/" target="_blank">GET INVOLVED</a> &nbsp;|&nbsp; 
+  <a href="https://breakthrought1d.org.uk/how-to-help/give/donate/" target="_blank" style="color:#78DCFF !important;">DONATE</a>
 </div>
 
 <div class="custom-header">
