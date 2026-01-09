@@ -212,10 +212,14 @@
 
   <button class="print-btn" onclick="window.print()">🖨️ Save as PDF</button>
 
-  <div style="border-left: 4px solid #002BFF; padding-left: 15px; margin-bottom: 40px; color: #555;">
-    <p><strong>By Thomas Knight</strong><br>
-    Research & Involvement Candidate | January 2026<br>
-    <em>Reading time: approx. 6 minutes</em></p>
+  <div style="border-left: 4px solid #002BFF; padding-left: 15px; margin-bottom: 40px; color: #555; overflow: hidden;">
+    <img src="https://i.imgur.com/8Xk40sU.png" alt="Thomas Knight Profile Picture" style="width: 80px; height: 80px; border-radius: 50%; margin-right: 20px; float: left; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="margin-top: 0;">
+      <strong>By Thomas Knight</strong><br>
+      <a href="https://www.linkedin.com/in/tom-knight-340784151/" target="_blank" style="color: #002BFF; font-weight: 600; text-decoration: none;">Connect on LinkedIn</a><br>
+      Research & Involvement Candidate | January 2026<br>
+      <em>Reading time: approx. 6 minutes</em>
+    </p>
   </div>
 
   <div style="background:#fafafa; padding:25px; border:1px solid #e1e4e8; border-radius:6px; margin-bottom:50px;">
