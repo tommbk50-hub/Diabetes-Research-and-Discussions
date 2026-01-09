@@ -1,174 +1,330 @@
-### What is GLP1?
-
-GLP-1 (Glucagon-Like Peptide-1) is a naturally occurring hormone produced in the small intestine and brain. It acts as an incretin, meaning it triggers metabolic responses to food intake, primarily by stimulating insulin release and regulating appetite.
-
-In modern medicine, the term "GLP-1" typically refers to GLP-1 receptor agonists, a class of medications designed to mimic this hormone to treat conditions like type 2 diabetes and obesity.
-
-### How GLP-1 Works
-
-GLP-1 medications activate receptors throughout the body to produce several key effects:
-
-- **Regulates Blood Sugar:** It prompts the pancreas to release more insulin when blood sugar levels rise and suppresses glucagon, a hormone that increases sugar production in the liver.
-
-- **Promotes Fullness:** It targets satiety centers in the brain to reduce hunger and "food noise" (persistent thoughts about eating).
-
-- **Slowing Digestion:** It delays gastric emptying, meaning food stays in the stomach longer, which leads to feeling full faster and for longer periods. 
-
-### Common GLP-1 Medications
-
-These drugs are primarily administered via weekly or daily self-injections, though oral versions are becoming more common in 2026.
-
-- **Semaglutide:** Brands include Ozempic and Rybelsus (licensed for type 2 diabetes) and Wegovy (licensed for weight loss).
-
-- **Tirzepatide:** Marketed as Mounjaro (diabetes/weight loss) and Zepbound (weight loss), this is a "dual agonist" that mimics both GLP-1 and another hormone, GIP.
-
-- **Liraglutide:** Brands include Victoza (diabetes) and Saxenda (weight loss).
-
-### Benefits and Risks
-
-- **Beyond Weight Loss:** Recent 2025/2026 data shows these drugs may also reduce the risk of heart attack, stroke, and kidney disease. They are also being studied for potential benefits in treating Alzheimer’s and substance use disorders.
-
-- **Common Side Effects:** Nausea, vomiting, diarrhea, and constipation are frequent, especially when starting the medication.
-
-- **Serious Risks:** Though rare, they have been linked to pancreatitis, gallbladder issues, and a potential risk of thyroid C-cell tumors.
-
-- **Regain upon Cessation:** 2026 research indicates that many patients regain a significant portion of lost weight within two years of stopping the medication if lifestyle changes are not maintained.
-### The Science of GLP-1
-
-### GLP1-peptide
-
-Naturally occurring GLP-1 is a peptide hormone derived from the proglucagon gene. Its structure is defined by its specific amino acid sequence and its three-dimensional shape, which are critical for its biological function.
-
-**Secondary and Tertiary Structure**
-The hormone's shape changes depending on whether it is in a solution or bound to its receptor: 
-
-- **Solution Structure:** In aqueous environments, GLP-1 is largely disordered and flexible.
-
-- **Receptor-Bound Structure:** When active, it adopts a distinct configuration consisting of:
-
-- **N-Terminal Random Coil (Residues 7–13):** A flexible "tail" that is essential for activating the receptor.
-
-- **Two Alpha-Helices:** These segments (typically residues 13–20 and 24–35) are separated by a short linker region (residues 21–23).
-
-- **The "Kink":** A structural break at Glycine-22 allows the peptide to bend and present a hydrophobic surface that facilitates binding to its target. 
-
-**Key Structural Features**
-
-- **Histidine at Position 7:** The free N-terminal amino acid (Histidine) is vital for the hormone’s insulin-stimulating activity.
-
-- **DPP-4 Cleavage Site:** The bond between Alanine-8 and Glutamic acid-9 is the primary target for the enzyme DPP-4. This enzyme cleaves the peptide within 1–2 minutes of secretion, rendering the hormone inactive and explaining its very short natural half-life.
-
-<img width="1622" height="749" alt="Image" src="https://github.com/user-attachments/assets/c6fdc854-a7f6-45ba-bd26-974c7585d554" />
-
-**Figure 1.** _Glucagon-like peptide 1 (GLP-1) is a hormone with essential roles in regulating insulin secretion, carbohydrate metabolism and appetite. Image generated with PyMol from PDB ID: 1D0R._ 
-
-### GLP-1 Receptor 
-
-The GLP-1 receptor (GLP-1R) is a large, complex protein belonging to the Class B (secretin-like) family of G protein-coupled receptors (GPCRs). **Its structure is defined by its ability to transition between "closed" inactive states and "extended" active states upon ligand binding.**
-
-**Signaling Role:** Because it is a transmembrane protein, it can act as a bridge, receiving a signal from the hormone outside the cell and transmitting it to G proteins located on the inside of the cell to trigger a biological response, such as insulin secretion.
-
-**Localisation:** It is primarily found on the surface (plasma membrane) of various cell types, including pancreatic beta cells and certain neurons in the brain. 
-
-### Main Structural Components
-
-The receptor is composed of two primary functional domains that work cooperatively:
-
-**Extracellular Domain (ECD):** A large N-terminal "cap" (roughly 120 amino acids) located outside the cell. It contains a "secretin recognition fold" stabilized by three conserved disulfide bonds. Its primary role is to capture the C-terminal end of the GLP-1 hormone.
-
-**Transmembrane Domain (TMD):** The core of the receptor, consisting of seven alpha-helices (TM1–TM7) that span the cell membrane. This domain contains the binding pocket for the N-terminal part of the GLP-1 hormone, which is responsible for triggering the receptor's activity.
-
-**Intracellular Loops (ICLs):** These loops connect the transmembrane helices on the inside of the cell and are the sites where the receptor interacts with G proteins to start cellular signaling. 
-
-
-
-In 2026, structural biology classifies the states of GLP-1 and its receptor according to the transition from a disordered free peptide to a structured, active complex.
-
-### 1. Apo State (Inactive GLP-1 Receptor)
-
-The "apo" state refers to the full-length human GLP-1 receptor (GLP-1R) without its natural peptide hormone bound. In this state, the receptor is inactive and adopts a "closed" conformation. 
-
-<img width="660" height="799" alt="Image" src="https://github.com/user-attachments/assets/47305852-10d3-4baf-b9eb-f4210695127b" />
-
-**Figure** _This crystal structure shows the full-length receptor in its **inactive, peptide-free form.** It reveals that the extracellular domain (ECD) rests against the transmembrane core, which prevents accidental activation._ 
-
-### 2. GLP-1 Bound State (Active Complex)
-The active state occurs when the natural GLP-1 hormone binds to the receptor, causing the ECD to move into an "up" position and the transmembrane helices to open for signaling.
-
-<img width="660" height="799" alt="Image" src="https://github.com/user-attachments/assets/c7ccc3c1-e101-4e2f-aa84-21924ce761a3" />
-
-
-### The Two-Domain Binding Mechanism
-
-The receptor activates through a "two-step" process: 
-
-1. **Capture:** The C-terminal region of the GLP-1 hormone first binds to the ECD, which acts like a fishing hook to secure the hormone.
-
-2. **Activation:** This initial binding causes the receptor to change shape, allowing the N-terminal end of the hormone to insert deep into the **TMD binding pocket.** This insertion pushes the transmembrane helices apart, creating an opening on the inside of the cell for G-protein coupling. 
-
-
-### Modern Structural Insights (2025–2026)
-
-- **Dynamic Signaling Hubs:** 2025 research has shown that the GLP-1 receptor does not just stay on the cell surface; once activated, it can move inside the cell to form specialized "signaling hubs" at contact sites between different organelles, such as the mitochondria and endoplasmic reticulum, to enhance insulin secretion.
-
-- **Inactive State Structure:** In the absence of a hormone, the receptor maintains a "closed" conformation where the ECD rests against the TMD, effectively blocking the activation site until a hormone arrives. 
-
-### Semiglutide: An artificial GLP-1 analogue
-
-Semaglutide was discovered by a research team at the Danish pharmaceutical company Novo Nordisk, led by scientists including Jesper Lau, Thomas Kruse, and Paw Bloch. Its discovery was a process of "rational protein engineering," building on the success of their previous drug, liraglutide (Victoza).
-
-In the early 2000s, Novo Nordisk had already developed liraglutide, which was the first human-based GLP-1 analog suitable for once-daily dosing. However, researchers wanted a "once-weekly" option to improve patient adherence. Semaglutide was engineered specifically to extend the half-life from liraglutide’s ~13 hours to approximately 7 days.
-
-### Strategic Structural Modifications
-
-To achieve this long-lasting effect, the team made three critical structural changes to the native human GLP-1 molecule (achieving 94% homology):
-
-- **DPP-4 Protection:** They replaced the amino acid alanine at position 8 with alpha-aminoisobutyric acid (Aib). This specific change prevents the enzyme DPP-4 from quickly breaking the drug down, which is what happens to natural GLP-1 within minutes.
-
-- **Albumin Binding:** They swapped liraglutide’s 16-carbon fatty acid for a 18-carbon fatty diacid. This allowed the drug to bind more tightly but reversibly to albumin (a protein in the blood), which protects it from being filtered out by the kidneys.
-
-- **Site-Specific Attachment:** They replaced lysine at position 34 with arginine to ensure the fatty acid chain only attached to the lysine at position 26, optimizing the drug's stability. While semaglutide was initially developed to treat type 2 diabetes (leading to the 2017 approval of Ozempic), researchers noted significant weight loss as a "side effect" during clinical trials. This led to a secondary development track focused specifically on obesity, resulting in the higher-dose version, Wegovy, approved in 2021.
-
-<img width="660" height="773" alt="Image" src="https://github.com/user-attachments/assets/74c4f730-b51c-43e8-b142-2fda5c725589" />
-
-**Figure:** _Overlay of GLP1-R-Semiglutide (light teal/orange) with GLP-1 (dark teal/yellow)._ 
-
-### Breakthrough in Oral Delivery 
-
-In 2019, Novo Nordisk achieved another discovery milestone by co-formulating semaglutide with an absorption enhancer called SNAC. This allowed the large peptide molecule to survive stomach acid and be absorbed into the bloodstream, creating Rybelsus, the first oral GLP-1 medication.
-
-PF-06882961, also known as danuglipron, is an oral, small-molecule GLP-1 receptor agonist developed by Pfizer for the treatment of obesity and type 2 diabetes. Unlike injectable peptide-based GLP-1s like semaglutide, it is a non-peptide molecule designed for oral delivery without the need for complex absorption enhancers.
-
-### Key Clinical Findings:
-
-- **Efficacy:** Phase 2b trials (NCT04707313) in adults with obesity showed statistically significant weight loss. Patients receiving twice-daily doses achieved mean weight reductions of 8% to 13% after 32 weeks.
-
-- **Tolerability Issues:** Despite its efficacy, the twice-daily formulation faced high discontinuation rates—greater than 50% in some cohorts—primarily due to gastrointestinal side effects like nausea, vomiting, and diarrhea.
-
-- **Comparison to Peptides:** Preclinical and Phase 1 data indicated that danuglipron had a glucose-lowering and weight-loss efficacy comparable to injectable GLP-1 agonists. 
-
-In April 2025, Pfizer officially discontinued the clinical development of danuglipron. The decision followed a single case of potential drug-induced liver injury (DILI) in an asymptomatic participant during dose-optimization studies for a once-daily formulation. Although other safety data were consistent with the GLP-1 class, Pfizer concluded the overall risk-benefit profile did not support further development.
-
-<img width="675" height="671" alt="Image" src="https://github.com/user-attachments/assets/15413f62-6cb3-44f0-8e44-d40449f9ae9b" />
-
-**Figure** _PF-06882961 (danuglipron) bound to GLP-1-R._ 
-
-### Status of Small-Molecule Oral GLP-1 Agonists (Non-Peptides)
-
-In early 2026, the landscape for oral GLP-1 receptor agonists has shifted significantly, with the first oral peptide pill for obesity receiving approval, while the next-generation small-molecule (non-peptide) pills have largely completed Phase 3 trials and are awaiting imminent regulatory decisions.
-
-LY3502970 (also known as Orforglipron) represents a significant breakthrough in GLP-1 pharmacology. It is a small-molecule, non-peptide agonist that activates the receptor through a mechanism distinct from the native GLP-1 peptide.
-
-Unlike the native GLP-1 peptide, which is a large molecule that spans the entire extracellular face of the receptor and inserts deep into the transmembrane core, LY3502970 binds in a much more compact, specific pocket.
-
-<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/debb080e-6b56-4333-ac0e-5735abf738ce" />
-
-**Figure:** _Orforglipron (LY3502970), the first FDA approved oral non-peptide GLP-1 receptor agonist._ 
-
-New oral drugs like orforglipron (expected for 2026 approval) activate the receptor differently than natural GLP-1. They bind to a unique pocket involving the ECD and specific transmembrane helices (TM1, 2, 3, and 7), creating a distinct receptor shape that may lead to more targeted signaling.
-
-The "Lid" Mechanism (ECD Role): A critical feature of its activation is the engagement of the receptor's N-terminal Extracellular Domain (ECD). The ECD effectively clamps down over the small molecule, acting like a "lid" to trap it in the binding pocket, giving a much longer lasting effect. 
-
-<img width="1521" height="703" alt="Image" src="https://github.com/user-attachments/assets/879f677e-c173-4d93-8faa-f35ec4a7b9ce" />
-
-**Figure:** _Structural basis for GLP-1 receptor activation by Orforglipron (orange), an orally active nonpeptide agonist. (2020) Proc Natl Acad Sci U S A 117: 29959-29967._
+<style>
+  /* --- 1. CORE BRANDING (Breakthrough T1D Style) --- */
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #333;
+    background-color: #F7F7F7; /* Light Gray Background */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* --- 2. HEADER SECTION --- */
+  header {
+    background-color: #002BFF; /* Electric Blue */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 8px solid #0B1157; /* Navy Accent */
+  }
+
+  header h1 {
+    font-weight: 800;
+    font-size: 2.8em;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+
+  header p {
+    font-size: 1.3em;
+    opacity: 0.95;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  /* --- 3. MAIN CONTENT CONTAINER --- */
+  .main-content {
+    max-width: 800px;
+    margin: -40px auto 50px; /* Overlap header */
+    background: white;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    position: relative;
+  }
+
+  /* --- 4. TYPOGRAPHY --- */
+  h1, h2 {
+    color: #0B1157; /* Navy Blue */
+    font-weight: 800;
+  }
+
+  h3 {
+    color: #002BFF; /* Electric Blue */
+    font-weight: 700;
+    border-bottom: 3px solid #78DCFF; /* Cyan Highlight */
+    padding-bottom: 8px;
+    margin-top: 40px;
+    font-size: 1.5em;
+  }
+
+  strong {
+    color: #0B1157;
+  }
+
+  /* --- 5. INTERACTIVE ELEMENTS --- */
+  a {
+    color: #002BFF;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.2s;
+  }
+  a:hover {
+    border-bottom: 2px solid #002BFF;
+  }
+
+  /* --- 6. IMAGES & CAPTIONS --- */
+  figure {
+    margin: 30px 0;
+    text-align: center;
+  }
+
+  img {
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+    font-style: italic;
+    background: #f0f4f8;
+    padding: 10px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  /* --- 7. SPECIAL COMPONENTS --- */
+  .author-card {
+    border-left: 4px solid #002BFF;
+    padding-left: 15px;
+    margin-bottom: 40px;
+    color: #555;
+    font-style: italic;
+    font-size: 0.95em;
+  }
+
+  .callout-box {
+    background-color: #E6F0FF; /* Very light blue */
+    border-left: 6px solid #002BFF;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  .nav-bar {
+    background: #0B1157;
+    color: white;
+    padding: 12px 20px;
+    font-size: 0.85em;
+    text-align: right;
+    letter-spacing: 0.5px;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .main-content {
+      padding: 20px;
+      margin-top: 0;
+    }
+    header h1 { font-size: 1.8em; }
+  }
+</style>
+
+<div class="nav-bar">
+  <b>BREAKTHROUGH T1D</b> &nbsp;|&nbsp; RESEARCH &nbsp;|&nbsp; GET INVOLVED &nbsp;|&nbsp; DONATE
+</div>
+
+<header>
+  <h1>The Future of GLP-1 Research</h1>
+  <p>An Analysis of Emerging Therapies for Type 1 Diabetes</p>
+</header>
+
+<div class="main-content">
+
+  <div class="author-card">
+    <p><strong>By Thomas Knight</strong><br>
+    Research & Involvement Candidate | January 2026<br>
+    <em>Reading time: approx. 6 minutes</em></p>
+  </div>
+
+  <div style="background:#fafafa; padding:15px; border:1px solid #ddd; border-radius:4px; margin-bottom:30px;">
+    <strong>In this article:</strong>
+    <ul style="margin:10px 0 0 20px; padding:0; font-size:0.9em;">
+      <li><a href="#what-is-glp1">What is GLP-1?</a></li>
+      <li><a href="#the-science-of-glp-1">The Science & Structure</a></li>
+      <li><a href="#breakthrough-in-oral-delivery">The Oral Delivery Breakthrough</a></li>
+      <li><a href="#status-of-small-molecule-oral-glp-1-agonists-non-peptides">Status of Small Molecules (2026)</a></li>
+    </ul>
+  </div>
+
+  <h3 id="what-is-glp1">What is GLP-1?</h3>
+  <p>GLP-1 (Glucagon-Like Peptide-1) is a naturally occurring hormone produced in the small intestine and brain. It acts as an incretin, meaning it triggers metabolic responses to food intake, primarily by stimulating insulin release and regulating appetite.</p>
+  <p>In modern medicine, the term "GLP-1" typically refers to GLP-1 receptor agonists, a class of medications designed to mimic this hormone to treat conditions like type 2 diabetes and obesity.</p>
+
+  <h3>How GLP-1 Works</h3>
+  <p>GLP-1 medications activate receptors throughout the body to produce several key effects:</p>
+  <ul>
+    <li><strong>Regulates Blood Sugar:</strong> It prompts the pancreas to release more insulin when blood sugar levels rise and suppresses glucagon, a hormone that increases sugar production in the liver.</li>
+    <li><strong>Promotes Fullness:</strong> It targets satiety centers in the brain to reduce hunger and "food noise" (persistent thoughts about eating).</li>
+    <li><strong>Slowing Digestion:</strong> It delays gastric emptying, meaning food stays in the stomach longer, which leads to feeling full faster and for longer periods.</li>
+  </ul>
+
+  <h3>Common GLP-1 Medications</h3>
+  <p>These drugs are primarily administered via weekly or daily self-injections, though oral versions are becoming more common in 2026.</p>
+  <ul>
+    <li><strong>Semaglutide:</strong> Brands include Ozempic and Rybelsus (licensed for type 2 diabetes) and Wegovy (licensed for weight loss).</li>
+    <li><strong>Tirzepatide:</strong> Marketed as Mounjaro (diabetes/weight loss) and Zepbound (weight loss), this is a "dual agonist" that mimics both GLP-1 and another hormone, GIP.</li>
+    <li><strong>Liraglutide:</strong> Brands include Victoza (diabetes) and Saxenda (weight loss).</li>
+  </ul>
+
+  <h3>Benefits and Risks</h3>
+  <ul>
+    <li><strong>Beyond Weight Loss:</strong> Recent 2025/2026 data shows these drugs may also reduce the risk of heart attack, stroke, and kidney disease. They are also being studied for potential benefits in treating Alzheimer’s and substance use disorders.</li>
+    <li><strong>Common Side Effects:</strong> Nausea, vomiting, diarrhea, and constipation are frequent, especially when starting the medication.</li>
+    <li><strong>Serious Risks:</strong> Though rare, they have been linked to pancreatitis, gallbladder issues, and a potential risk of thyroid C-cell tumors.</li>
+    <li><strong>Regain upon Cessation:</strong> 2026 research indicates that many patients regain a significant portion of lost weight within two years of stopping the medication if lifestyle changes are not maintained.</li>
+  </ul>
+
+  <h3 id="the-science-of-glp-1">The Science of GLP-1</h3>
+
+  <h4>GLP1-peptide</h4>
+  <p>Naturally occurring GLP-1 is a peptide hormone derived from the proglucagon gene. Its structure is defined by its specific amino acid sequence and its three-dimensional shape, which are critical for its biological function.</p>
+  
+  <p><strong>Secondary and Tertiary Structure</strong><br>
+  The hormone's shape changes depending on whether it is in a solution or bound to its receptor:</p>
+  <ul>
+    <li><strong>Solution Structure:</strong> In aqueous environments, GLP-1 is largely disordered and flexible.</li>
+    <li><strong>Receptor-Bound Structure:</strong> When active, it adopts a distinct configuration consisting of:
+      <ul>
+        <li><strong>N-Terminal Random Coil (Residues 7–13):</strong> A flexible "tail" that is essential for activating the receptor.</li>
+        <li><strong>Two Alpha-Helices:</strong> These segments (typically residues 13–20 and 24–35) are separated by a short linker region (residues 21–23).</li>
+        <li><strong>The "Kink":</strong> A structural break at Glycine-22 allows the peptide to bend and present a hydrophobic surface that facilitates binding to its target.</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p><strong>Key Structural Features</strong></p>
+  <ul>
+    <li><strong>Histidine at Position 7:</strong> The free N-terminal amino acid (Histidine) is vital for the hormone’s insulin-stimulating activity.</li>
+    <li><strong>DPP-4 Cleavage Site:</strong> The bond between Alanine-8 and Glutamic acid-9 is the primary target for the enzyme DPP-4. This enzyme cleaves the peptide within 1–2 minutes of secretion, rendering the hormone inactive and explaining its very short natural half-life.</li>
+  </ul>
+
+  <figure>
+    <img src="https://github.com/user-attachments/assets/c6fdc854-a7f6-45ba-bd26-974c7585d554" alt="GLP-1 Structure">
+    <figcaption>Figure 1. Glucagon-like peptide 1 (GLP-1) structure regulating insulin secretion. Generated with PyMol from PDB ID: 1D0R.</figcaption>
+  </figure>
+
+  <h3>GLP-1 Receptor</h3>
+  <p>The GLP-1 receptor (GLP-1R) is a large, complex protein belonging to the Class B (secretin-like) family of G protein-coupled receptors (GPCRs).</p>
+  
+  <div class="callout-box">
+    <strong>Key Concept:</strong> The receptor's structure is defined by its ability to transition between "closed" inactive states and "extended" active states upon ligand binding.
+  </div>
+
+  <p><strong>Signaling Role:</strong> Because it is a transmembrane protein, it can act as a bridge, receiving a signal from the hormone outside the cell and transmitting it to G proteins located on the inside of the cell to trigger a biological response, such as insulin secretion.</p>
+  <p><strong>Localisation:</strong> It is primarily found on the surface (plasma membrane) of various cell types, including pancreatic beta cells and certain neurons in the brain.</p>
+
+  <h3>Main Structural Components</h3>
+  <p>The receptor is composed of two primary functional domains that work cooperatively:</p>
+  <ul>
+    <li><strong>Extracellular Domain (ECD):</strong> A large N-terminal "cap" (roughly 120 amino acids) located outside the cell. It contains a "secretin recognition fold" stabilized by three conserved disulfide bonds. Its primary role is to capture the C-terminal end of the GLP-1 hormone.</li>
+    <li><strong>Transmembrane Domain (TMD):</strong> The core of the receptor, consisting of seven alpha-helices (TM1–TM7) that span the cell membrane. This domain contains the binding pocket for the N-terminal part of the GLP-1 hormone, which is responsible for triggering the receptor's activity.</li>
+    <li><strong>Intracellular Loops (ICLs):</strong> These loops connect the transmembrane helices on the inside of the cell and are the sites where the receptor interacts with G proteins to start cellular signaling.</li>
+  </ul>
+
+  <p>In 2026, structural biology classifies the states of GLP-1 and its receptor according to the transition from a disordered free peptide to a structured, active complex.</p>
+
+  <h4>1. Apo State (Inactive GLP-1 Receptor)</h4>
+  <p>The "apo" state refers to the full-length human GLP-1 receptor (GLP-1R) without its natural peptide hormone bound. In this state, the receptor is inactive and adopts a "closed" conformation.</p>
+
+  <figure>
+    <img src="https://github.com/user-attachments/assets/47305852-10d3-4baf-b9eb-f4210695127b" alt="Inactive GLP-1 Receptor">
+    <figcaption>Figure 2. Crystal structure of the full-length receptor in its inactive, peptide-free form. The ECD rests against the transmembrane core.</figcaption>
+  </figure>
+
+  <h4>2. GLP-1 Bound State (Active Complex)</h4>
+  <p>The active state occurs when the natural GLP-1 hormone binds to the receptor, causing the ECD to move into an "up" position and the transmembrane helices to open for signaling.</p>
+
+  <figure>
+    <img src="https://github.com/user-attachments/assets/c7ccc3c1-e101-4e2f-aa84-21924ce761a3" alt="Active GLP-1 Complex">
+    <figcaption>Figure 3. The Active Complex state.</figcaption>
+  </figure>
+
+  <h3>The Two-Domain Binding Mechanism</h3>
+  <ol>
+    <li><strong>Capture:</strong> The C-terminal region of the GLP-1 hormone first binds to the ECD, which acts like a fishing hook to secure the hormone.</li>
+    <li><strong>Activation:</strong> This initial binding causes the receptor to change shape, allowing the N-terminal end of the hormone to insert deep into the <strong>TMD binding pocket.</strong> This insertion pushes the transmembrane helices apart, creating an opening on the inside of the cell for G-protein coupling.</li>
+  </ol>
+
+  <h3>Modern Structural Insights (2025–2026)</h3>
+  <ul>
+    <li><strong>Dynamic Signaling Hubs:</strong> 2025 research has shown that the GLP-1 receptor does not just stay on the cell surface; once activated, it can move inside the cell to form specialized "signaling hubs" at contact sites between different organelles, such as the mitochondria and endoplasmic reticulum, to enhance insulin secretion.</li>
+    <li><strong>Inactive State Structure:</strong> In the absence of a hormone, the receptor maintains a "closed" conformation where the ECD rests against the TMD, effectively blocking the activation site until a hormone arrives.</li>
+  </ul>
+
+  <h3>Semaglutide: An artificial GLP-1 analogue</h3>
+  <p>Semaglutide was discovered by a research team at the Danish pharmaceutical company Novo Nordisk, led by scientists including Jesper Lau, Thomas Kruse, and Paw Bloch. Its discovery was a process of "rational protein engineering," building on the success of their previous drug, liraglutide (Victoza).</p>
+  <p>In the early 2000s, Novo Nordisk had already developed liraglutide, which was the first human-based GLP-1 analog suitable for once-daily dosing. However, researchers wanted a "once-weekly" option to improve patient adherence. Semaglutide was engineered specifically to extend the half-life from liraglutide’s ~13 hours to approximately 7 days.</p>
+
+  <h3>Strategic Structural Modifications</h3>
+  <p>To achieve this long-lasting effect, the team made three critical structural changes to the native human GLP-1 molecule (achieving 94% homology):</p>
+  <ul>
+    <li><strong>DPP-4 Protection:</strong> They replaced the amino acid alanine at position 8 with alpha-aminoisobutyric acid (Aib). This specific change prevents the enzyme DPP-4 from quickly breaking the drug down, which is what happens to natural GLP-1 within minutes.</li>
+    <li><strong>Albumin Binding:</strong> They swapped liraglutide’s 16-carbon fatty acid for a 18-carbon fatty diacid. This allowed the drug to bind more tightly but reversibly to albumin (a protein in the blood), which protects it from being filtered out by the kidneys.</li>
+    <li><strong>Site-Specific Attachment:</strong> They replaced lysine at position 34 with arginine to ensure the fatty acid chain only attached to the lysine at position 26, optimizing the drug's stability.</li>
+  </ul>
+
+  <figure>
+    <img src="https://github.com/user-attachments/assets/74c4f730-b51c-43e8-b142-2fda5c725589" alt="Semaglutide vs GLP-1">
+    <figcaption>Figure 4. Overlay of GLP1-R-Semaglutide (light teal/orange) with GLP-1 (dark teal/yellow).</figcaption>
+  </figure>
+
+  <h3 id="breakthrough-in-oral-delivery">Breakthrough in Oral Delivery</h3>
+  <p>In 2019, Novo Nordisk achieved another discovery milestone by co-formulating semaglutide with an absorption enhancer called SNAC. This allowed the large peptide molecule to survive stomach acid and be absorbed into the bloodstream, creating Rybelsus, the first oral GLP-1 medication.</p>
+  <p><strong>PF-06882961 (Danuglipron)</strong> is an oral, small-molecule GLP-1 receptor agonist developed by Pfizer for the treatment of obesity and type 2 diabetes. Unlike injectable peptide-based GLP-1s like semaglutide, it is a non-peptide molecule designed for oral delivery without the need for complex absorption enhancers.</p>
+
+  <h4>Key Clinical Findings:</h4>
+  <ul>
+    <li><strong>Efficacy:</strong> Phase 2b trials (NCT04707313) in adults with obesity showed statistically significant weight loss. Patients receiving twice-daily doses achieved mean weight reductions of 8% to 13% after 32 weeks.</li>
+    <li><strong>Tolerability Issues:</strong> Despite its efficacy, the twice-daily formulation faced high discontinuation rates—greater than 50% in some cohorts—primarily due to gastrointestinal side effects like nausea, vomiting, and diarrhea.</li>
+    <li><strong>Comparison to Peptides:</strong> Preclinical and Phase 1 data indicated that danuglipron had a glucose-lowering and weight-loss efficacy comparable to injectable GLP-1 agonists.</li>
+  </ul>
+
+  <p>In April 2025, Pfizer officially discontinued the clinical development of danuglipron. The decision followed a single case of potential drug-induced liver injury (DILI) in an asymptomatic participant during dose-optimization studies for a once-daily formulation.</p>
+
+  <figure>
+    <img src="https://github.com/user-attachments/assets/15413f62-6cb3-44f0-8e44-d40449f9ae9b" alt="Danuglipron Bound">
+    <figcaption>Figure 5. PF-06882961 (danuglipron) bound to GLP-1-R.</figcaption>
+  </figure>
+
+  <h3 id="status-of-small-molecule-oral-glp-1-agonists-non-peptides">Status of Small-Molecule Oral GLP-1 Agonists (Non-Peptides)</h3>
+  <p>In early 2026, the landscape for oral GLP-1 receptor agonists has shifted significantly, with the first oral peptide pill for obesity receiving approval, while the next-generation small-molecule (non-peptide) pills have largely completed Phase 3 trials and are awaiting imminent regulatory decisions.</p>
+  
+  <p><strong>LY3502970 (Orforglipron)</strong> represents a significant breakthrough in GLP-1 pharmacology. It is a small-molecule, non-peptide agonist that activates the receptor through a mechanism distinct from the native GLP-1 peptide.</p>
+  
+  <div class="callout-box">
+    <strong>Key Difference:</strong> Unlike the native GLP-1 peptide, which is a large molecule that spans the entire extracellular face of the receptor and inserts deep into the transmembrane core, LY3502970 binds in a much more compact, specific pocket.
+  </div>
+
+  <figure>
+    <img src="https://github.com/user-attachments/assets/debb080e-6b56-4333-ac0e-5735abf738ce" alt="Orforglipron Structure">
+    <figcaption>Figure 6. Orforglipron (LY3502970), the first FDA approved oral non-peptide GLP-1 receptor agonist.</figcaption>
+  </figure>
+
+  <p>New oral drugs like orforglipron (expected for 2026 approval) activate the receptor differently than natural GLP-1. They bind to a unique pocket involving the ECD and specific transmembrane helices (TM1, 2, 3, and 7), creating a distinct receptor shape that may lead to more targeted signaling.</p>
+  
+  <p><strong>The "Lid" Mechanism (ECD Role):</strong> A critical feature of its activation is the engagement of the receptor's N-terminal Extracellular Domain (ECD). The ECD effectively clamps down over the small molecule, acting like a "lid" to trap it in the binding pocket, giving a much longer lasting effect.</p>
+
+  <figure>
+    <img src="https://github.com/user-attachments/assets/879f677e-c173-4d93-8faa-f35ec4a7b9ce" alt="Orforglipron Binding Mechanism">
+    <figcaption>Figure 7. Structural basis for GLP-1 receptor activation by Orforglipron (orange). Source: (2020) Proc Natl Acad Sci U S A 117.</figcaption>
+  </figure>
+
+</div>
