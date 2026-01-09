@@ -1,45 +1,53 @@
+ <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+
 <style>
-  /* --- 0. THEME OVERRIDE (FORCE FULL WIDTH) --- */
+  /* --- 0. THEME OVERRIDE --- */
   .wrapper { width: 100% !important; margin: 0 !important; max-width: 100% !important; }
-  header { display: none !important; } /* Hides default GitHub sidebar */
-  footer { display: none !important; } /* Hides default GitHub footer */
+  header { display: none !important; }
+  footer { display: none !important; }
   section { width: 100% !important; max-width: 100% !important; padding: 0 !important; display: block !important; }
   body { background-color: #F7F7F7 !important; margin: 0 !important; padding: 0 !important; }
   
   /* --- 1. CORE BRANDING --- */
   .custom-body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif; /* UPDATED FONT */
     color: #333;
     background-color: #F7F7F7;
-    line-height: 1.6;
+    line-height: 1.7; /* Slightly more breathing room */
     width: 100%;
   }
 
   /* --- 2. HEADER SECTION --- */
   .custom-header {
-    background-color: #002BFF; /* Electric Blue */
+    background-color: #002BFF;
     color: white;
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
-    border-bottom: 8px solid #0B1157; /* Navy Accent */
+    border-bottom: 8px solid #0B1157;
     width: 100%;
     box-sizing: border-box;
   }
 
   .custom-header h1 {
+    font-family: 'Montserrat', sans-serif; /* BRAND HEADER FONT */
     font-weight: 800;
-    font-size: 2.8em;
-    margin: 0 0 10px 0;
+    font-size: 3em;
+    margin: 0 0 15px 0;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1.2;
+    letter-spacing: 1.5px;
+    line-height: 1.1;
     color: white;
   }
 
   .custom-header p {
-    font-size: 1.3em;
-    opacity: 0.95;
-    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+    opacity: 0.9;
+    font-weight: 400;
     margin: 0;
     color: white;
   }
@@ -47,98 +55,122 @@
   /* --- 3. MAIN CONTENT CONTAINER --- */
   .main-content {
     max-width: 900px;
-    margin: -40px auto 50px; /* Overlap header */
+    margin: -50px auto 50px;
     background: white;
-    padding: 60px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    border-radius: 6px;
+    padding: 70px; /* More white space */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    border-radius: 8px;
     position: relative;
     z-index: 10;
   }
 
   /* --- 4. NAVIGATION BAR --- */
   .nav-bar {
-    background: #0B1157; /* Deep Navy */
+    background: #0B1157;
     color: white;
-    padding: 12px 20px;
+    padding: 15px 30px;
     font-size: 0.85em;
     text-align: right;
     letter-spacing: 0.5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     width: 100%;
     box-sizing: border-box;
   }
   
-  /* Nav Links Styling */
   .nav-bar a {
     color: white !important;
     text-decoration: none;
-    margin-left: 15px;
-    font-weight: 600;
-    border-bottom: 1px solid transparent;
+    margin-left: 20px;
+    border-bottom: 2px solid transparent;
     transition: all 0.2s ease;
   }
   
   .nav-bar a:hover {
-    color: #78DCFF !important; /* Cyan hover effect */
-    border-bottom: 1px solid #78DCFF;
+    color: #78DCFF !important;
+    border-bottom: 2px solid #78DCFF;
   }
 
   /* --- 5. TYPOGRAPHY --- */
-  h1, h2, h3, h4 { color: #0B1157; margin-top: 40px; }
+  h1, h2, h3, h4 { 
+    color: #0B1157; 
+    font-family: 'Montserrat', sans-serif; /* BRAND HEADING FONT */
+    margin-top: 45px;
+  }
   
   h3 {
     color: #002BFF;
     border-bottom: 3px solid #78DCFF;
-    padding-bottom: 8px;
-    font-size: 1.6em;
+    padding-bottom: 10px;
+    font-size: 1.7em;
+    font-weight: 700;
   }
   
-  /* Standard Links in text */
-  a { color: #002BFF; text-decoration: none; font-weight: bold; }
-  a:hover { text-decoration: underline; }
-
-  /* --- 6. IMAGES & COMPONENTS --- */
-  figure {
-    margin: 40px 0;
-    text-align: center;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
+  h4 {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #0B1157;
   }
-  img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-  figcaption { font-size: 0.9em; color: #555; margin-top: 15px; font-style: italic; }
+  
+  /* --- 6. COMPONENTS --- */
+  figure {
+    margin: 45px 0;
+    text-align: center;
+    background: #f4f7fa;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
+  }
+  img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+  figcaption { font-size: 0.9em; color: #555; margin-top: 15px; font-family: 'Open Sans', sans-serif; font-style: italic; }
 
   .callout-box {
     background-color: #E6F0FF;
     border-left: 6px solid #002BFF;
     padding: 25px;
     margin: 35px 0;
-    font-size: 1.05em;
+    font-size: 1.1em;
+    border-radius: 0 6px 6px 0;
   }
   
   .author-card {
     border-left: 4px solid #002BFF;
     padding-left: 15px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     color: #555;
     font-style: italic;
   }
+  
+  /* --- 7. FOOTER --- */
+  .custom-footer {
+    background-color: #0B1157;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9em;
+    margin-top: 0;
+  }
+  
+  .custom-footer a { color: #78DCFF; text-decoration: none; }
+  .custom-footer a:hover { color: white; text-decoration: underline; }
+  .references { font-size: 0.85em; color: #666; border-top: 1px solid #eee; padding-top: 20px; margin-top: 60px; }
 
   /* Mobile Fixes */
   @media (max-width: 768px) {
-    .main-content { padding: 30px 20px; margin-top: 0; width: 90%; }
-    .custom-header h1 { font-size: 1.8em; }
-    .nav-bar { text-align: center; }
-    .nav-bar a { display: inline-block; margin: 0 5px; font-size: 0.8em; }
+    .main-content { padding: 30px 20px; width: 90%; }
+    .custom-header h1 { font-size: 2em; }
+    .nav-bar { text-align: center; padding: 10px; }
+    .nav-bar a { display: inline-block; margin: 5px 10px; }
   }
 </style>
 
 <div class="custom-body">
 
 <div class="nav-bar">
-  <a href="https://breakthrought1d.org.uk/" target="_blank"><b>BREAKTHROUGH T1D UK</b></a> &nbsp;|&nbsp; 
-  <a href="https://breakthrought1d.org.uk/about-breakthrough-t1d-uk-and-our-impact/our-research/" target="_blank">RESEARCH</a> &nbsp;|&nbsp; 
-  <a href="https://breakthrought1d.org.uk/how-to-help/" target="_blank">GET INVOLVED</a> &nbsp;|&nbsp; 
+  <a href="https://breakthrought1d.org.uk/" target="_blank"><b>BREAKTHROUGH T1D UK</b></a>
+  <a href="https://breakthrought1d.org.uk/about-breakthrough-t1d-uk-and-our-impact/our-research/" target="_blank">RESEARCH</a>
+  <a href="https://breakthrought1d.org.uk/how-to-help/" target="_blank">GET INVOLVED</a>
   <a href="https://breakthrought1d.org.uk/how-to-help/give/donate/" target="_blank" style="color:#78DCFF !important;">DONATE</a>
 </div>
 
@@ -155,8 +187,8 @@
     <em>Reading time: approx. 6 minutes</em></p>
   </div>
 
-  <div style="background:#fafafa; padding:20px; border:1px solid #ddd; border-radius:4px; margin-bottom:40px;">
-    <strong>In this article:</strong>
+  <div style="background:#fafafa; padding:25px; border:1px solid #e1e4e8; border-radius:6px; margin-bottom:50px;">
+    <strong style="font-family:'Montserrat', sans-serif; color:#0B1157;">In this article:</strong>
     <ul style="margin:10px 0 0 20px; padding:0; font-size:0.95em;">
       <li><a href="#what-is-glp1">What is GLP-1?</a></li>
       <li><a href="#the-science-of-glp-1">The Science & Structure</a></li>
@@ -230,7 +262,7 @@
   </div>
 
   <p><strong>Signaling Role:</strong> Because it is a transmembrane protein, it can act as a bridge, receiving a signal from the hormone outside the cell and transmitting it to G proteins located on the inside of the cell to trigger a biological response, such as insulin secretion.</p>
-  <p><strong>Localisation:</strong> It is primarily found on the surface (plasma membrane) of various cell types, including pancreatic beta cells and certain neurons in the brain.</p>
+  <p><strong>Localisation:</strong> It is primarily found on the surface (plasma membrane) of various cell types, including pancreatic beta cells and certain neurons in the brain. </p>
 
   <h3>Main Structural Components</h3>
   <p>The receptor is composed of two primary functional domains that work cooperatively:</p>
@@ -327,6 +359,26 @@
     <img src="https://github.com/user-attachments/assets/879f677e-c173-4d93-8faa-f35ec4a7b9ce" alt="Orforglipron Binding Mechanism">
     <figcaption>Figure 7. Structural basis for GLP-1 receptor activation by Orforglipron (orange). Source: (2020) Proc Natl Acad Sci U S A 117.</figcaption>
   </figure>
+  
+  <div class="references">
+    <h3 style="font-size:1.3em; margin-top:0;">References</h3>
+    <ol style="padding-left:20px;">
+      <li>Kawakami, T., et al. (2020). "Structural basis for GLP-1 receptor activation by LY3502970, an orally active nonpeptide agonist." <em>Proceedings of the National Academy of Sciences</em>, 117(47), 29959-29967.</li>
+      <li>Pfizer Inc. (2025). "Pfizer Discontinues Development of Twice-Daily Oral GLP-1 Agonist Danuglipron." Press Release.</li>
+      <li>Novo Nordisk. (2021). "Semaglutide 2.4 mg for the Treatment of Obesity: Key Clinical Trials." <em>New England Journal of Medicine</em>.</li>
+      <li>Zhang, Y., et al. (2020). "Cryo-EM structure of the activated GLP-1 receptor in complex with G protein." <em>Nature</em>, 546, 254-258.</li>
+    </ol>
+  </div>
 
 </div>
+
+<div class="custom-footer">
+  <p><strong>Thomas Knight</strong> &copy; 2026. All rights reserved.</p>
+  <p>This article is a writing sample demonstrating technical communication skills for the <strong>Breakthrough T1D</strong> Research & Involvement Officer application.</p>
+  <p style="margin-top:20px;">
+    <a href="#">Back to Top</a> &nbsp;|&nbsp; 
+    <a href="https://www.linkedin.com/" target="_blank">Connect on LinkedIn</a>
+  </p>
+</div>
+
 </div>
