@@ -1,70 +1,91 @@
- <head>
+<head>
+  <title>The Future of GLP-1 Research | Thomas Knight</title>
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <meta property="og:title" content="The Future of GLP-1 Research">
+  <meta property="og:description" content="An analysis of emerging T1D therapies by Thomas Knight.">
 </head>
 
 <style>
-  /* --- 0. THEME OVERRIDE --- */
+  /* --- RESET & LAYOUT --- */
   .wrapper { width: 100% !important; margin: 0 !important; max-width: 100% !important; }
-  header { display: none !important; }
-  footer { display: none !important; }
+  header, footer { display: none !important; } /* Hide GitHub defaults */
   section { width: 100% !important; max-width: 100% !important; padding: 0 !important; display: block !important; }
   body { background-color: #F7F7F7 !important; margin: 0 !important; padding: 0 !important; }
-  
-  /* --- 1. CORE BRANDING --- */
+  html { scroll-behavior: smooth; }
+
+  /* --- BRANDING & TYPOGRAPHY --- */
   .custom-body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif; /* UPDATED FONT */
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     color: #333;
     background-color: #F7F7F7;
-    line-height: 1.7; /* Slightly more breathing room */
+    line-height: 1.7;
     width: 100%;
   }
 
-  /* --- 2. HEADER SECTION --- */
+  h1, h2, h3, h4 { 
+    color: #0B1157; 
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 45px;
+  }
+
+  h3 {
+    color: #002BFF;
+    border-bottom: 3px solid #78DCFF;
+    padding-bottom: 10px;
+    font-size: 1.7em;
+    font-weight: 700;
+  }
+
+  /* --- HEADER WITH GRADIENT --- */
   .custom-header {
-    background-color: #002BFF;
+    /* The "Breakthrough" Gradient - Subtle sheen */
+    background: linear-gradient(135deg, #002BFF 0%, #0020c2 100%);
     color: white;
-    padding: 70px 20px;
+    padding: 80px 20px;
     text-align: center;
     border-bottom: 8px solid #0B1157;
     width: 100%;
-    box-sizing: border-box;
   }
 
   .custom-header h1 {
-    font-family: 'Montserrat', sans-serif; /* BRAND HEADER FONT */
     font-weight: 800;
-    font-size: 3em;
+    font-size: 3.2em;
     margin: 0 0 15px 0;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     line-height: 1.1;
     color: white;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.2);
   }
 
   .custom-header p {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
-    opacity: 0.9;
+    opacity: 0.95;
     font-weight: 400;
     margin: 0;
     color: white;
   }
 
-  /* --- 3. MAIN CONTENT CONTAINER --- */
+  /* --- MAIN CONTENT CARD --- */
   .main-content {
     max-width: 900px;
-    margin: -50px auto 50px;
+    margin: -60px auto 50px;
     background: white;
-    padding: 70px; /* More white space */
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    padding: 70px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
     border-radius: 8px;
     position: relative;
     z-index: 10;
   }
 
-  /* --- 4. NAVIGATION BAR --- */
+  /* --- NAVIGATION BAR --- */
   .nav-bar {
     background: #0B1157;
     color: white;
@@ -74,8 +95,6 @@
     letter-spacing: 0.5px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    width: 100%;
-    box-sizing: border-box;
   }
   
   .nav-bar a {
@@ -91,38 +110,47 @@
     border-bottom: 2px solid #78DCFF;
   }
 
-  /* --- 5. TYPOGRAPHY --- */
-  h1, h2, h3, h4 { 
-    color: #0B1157; 
-    font-family: 'Montserrat', sans-serif; /* BRAND HEADING FONT */
-    margin-top: 45px;
-  }
-  
-  h3 {
+  /* --- "PRINT PDF" BUTTON --- */
+  .print-btn {
+    background: white;
     color: #002BFF;
-    border-bottom: 3px solid #78DCFF;
-    padding-bottom: 10px;
-    font-size: 1.7em;
+    border: 2px solid #002BFF;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    font-size: 0.85em;
+    cursor: pointer;
+    float: right;
+    transition: all 0.2s;
+    margin-top: -10px;
   }
-  
-  h4 {
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #0B1157;
+  .print-btn:hover {
+    background: #002BFF;
+    color: white;
   }
-  
-  /* --- 6. COMPONENTS --- */
+
+  /* --- COMPONENTS --- */
   figure {
     margin: 45px 0;
     text-align: center;
-    background: #f4f7fa;
+    background: #f8faff;
     padding: 25px;
     border-radius: 8px;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #eef2f7;
+    transition: transform 0.2s;
   }
-  img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
-  figcaption { font-size: 0.9em; color: #555; margin-top: 15px; font-family: 'Open Sans', sans-serif; font-style: italic; }
+  figure:hover { transform: translateY(-2px); } /* Subtle lift effect */
+
+  img { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+  
+  figcaption { 
+    font-size: 0.9em; 
+    color: #555; 
+    margin-top: 15px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-style: italic; 
+  }
 
   .callout-box {
     background-color: #E6F0FF;
@@ -133,35 +161,36 @@
     border-radius: 0 6px 6px 0;
   }
   
-  .author-card {
-    border-left: 4px solid #002BFF;
-    padding-left: 15px;
-    margin-bottom: 50px;
-    color: #555;
-    font-style: italic;
-  }
-  
-  /* --- 7. FOOTER --- */
+  /* --- FOOTER --- */
   .custom-footer {
     background-color: #0B1157;
     color: white;
-    padding: 50px 20px;
+    padding: 60px 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 0.9em;
-    margin-top: 0;
   }
-  
-  .custom-footer a { color: #78DCFF; text-decoration: none; }
+  .custom-footer a { color: #78DCFF; text-decoration: none; font-weight: 600; }
   .custom-footer a:hover { color: white; text-decoration: underline; }
-  .references { font-size: 0.85em; color: #666; border-top: 1px solid #eee; padding-top: 20px; margin-top: 60px; }
 
-  /* Mobile Fixes */
+  /* --- PRINT STYLES (For when they click Print) --- */
+  @media print {
+    .nav-bar, .custom-footer, .print-btn { display: none !important; }
+    .custom-header { padding: 30px; background: white; color: #002BFF; border-bottom: 2px solid #002BFF; }
+    .custom-header h1 { color: #002BFF; font-size: 24pt; text-shadow: none; }
+    .custom-header p { color: #333; }
+    .main-content { box-shadow: none; margin: 0; padding: 0; max-width: 100%; }
+    body { background: white !important; }
+    a { text-decoration: none; color: black; }
+  }
+
+  /* Mobile Adjustments */
   @media (max-width: 768px) {
     .main-content { padding: 30px 20px; width: 90%; }
     .custom-header h1 { font-size: 2em; }
-    .nav-bar { text-align: center; padding: 10px; }
+    .nav-bar { text-align: center; padding: 15px; }
     .nav-bar a { display: inline-block; margin: 5px 10px; }
+    .print-btn { float: none; display: block; width: 100%; margin: 20px 0; text-align: center; }
   }
 </style>
 
@@ -181,7 +210,9 @@
 
 <div class="main-content">
 
-  <div class="author-card">
+  <button class="print-btn" onclick="window.print()">🖨️ Save as PDF</button>
+
+  <div style="border-left: 4px solid #002BFF; padding-left: 15px; margin-bottom: 40px; color: #555;">
     <p><strong>By Thomas Knight</strong><br>
     Research & Involvement Candidate | January 2026<br>
     <em>Reading time: approx. 6 minutes</em></p>
@@ -262,7 +293,7 @@
   </div>
 
   <p><strong>Signaling Role:</strong> Because it is a transmembrane protein, it can act as a bridge, receiving a signal from the hormone outside the cell and transmitting it to G proteins located on the inside of the cell to trigger a biological response, such as insulin secretion.</p>
-  <p><strong>Localisation:</strong> It is primarily found on the surface (plasma membrane) of various cell types, including pancreatic beta cells and certain neurons in the brain. </p>
+  <p><strong>Localisation:</strong> It is primarily found on the surface (plasma membrane) of various cell types, including pancreatic beta cells and certain neurons in the brain.</p>
 
   <h3>Main Structural Components</h3>
   <p>The receptor is composed of two primary functional domains that work cooperatively:</p>
@@ -360,7 +391,7 @@
     <figcaption>Figure 7. Structural basis for GLP-1 receptor activation by Orforglipron (orange). Source: (2020) Proc Natl Acad Sci U S A 117.</figcaption>
   </figure>
   
-  <div class="references">
+  <div style="font-size: 0.85em; color: #666; border-top: 1px solid #eee; padding-top: 20px; margin-top: 60px;">
     <h3 style="font-size:1.3em; margin-top:0;">References</h3>
     <ol style="padding-left:20px;">
       <li>Kawakami, T., et al. (2020). "Structural basis for GLP-1 receptor activation by LY3502970, an orally active nonpeptide agonist." <em>Proceedings of the National Academy of Sciences</em>, 117(47), 29959-29967.</li>
@@ -377,7 +408,7 @@
   <p>This article is a writing sample demonstrating technical communication skills for the <strong>Breakthrough T1D</strong> Research & Involvement Officer application.</p>
   <p style="margin-top:20px;">
     <a href="#">Back to Top</a> &nbsp;|&nbsp; 
-    <a href="https://www.linkedin.com/" target="_blank">Connect on LinkedIn</a>
+    <a href="https://www.linkedin.com/in/tom-knight-340784151/" target="_blank">Connect on LinkedIn</a>
   </p>
 </div>
 
