@@ -1,54 +1,72 @@
 <style>
+  /* --- 0. THEME OVERRIDE (THE NUCLEAR OPTION) --- */
+  /* This block hides the default GitHub Sidebar and Footer */
+  .wrapper { width: 100% !important; margin: 0 !important; max-width: 100% !important; }
+  header { display: none !important; } /* Hides the default theme sidebar */
+  footer { display: none !important; } /* Hides the default theme footer */
+  section { width: 100% !important; max-width: 100% !important; padding: 0 !important; display: block !important; }
+  body { background-color: #F7F7F7 !important; }
+  
   /* --- 1. CORE BRANDING (Breakthrough T1D Style) --- */
-  body {
+  /* We use specific classes now to avoid conflict with the hidden theme elements */
+  
+  .custom-body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #333;
-    background-color: #F7F7F7; /* Light Gray Background */
+    background-color: #F7F7F7;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   /* --- 2. HEADER SECTION --- */
-  header {
+  .custom-header {
     background-color: #002BFF; /* Electric Blue */
     color: white;
     padding: 60px 20px;
     text-align: center;
     border-bottom: 8px solid #0B1157; /* Navy Accent */
+    width: 100%;
+    box-sizing: border-box;
+    display: block !important; /* Force show despite the header reset above */
   }
 
-  header h1 {
+  .custom-header h1 {
     font-weight: 800;
     font-size: 2.8em;
     margin: 0 0 10px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2;
+    color: white; /* Ensure title is white */
   }
 
-  header p {
+  .custom-header p {
     font-size: 1.3em;
     opacity: 0.95;
     font-weight: 300;
     margin: 0;
+    color: white;
   }
 
   /* --- 3. MAIN CONTENT CONTAINER --- */
   .main-content {
-    max-width: 800px;
+    max-width: 900px; /* Slightly wider for better reading */
     margin: -40px auto 50px; /* Overlap header */
     background: white;
-    padding: 50px;
+    padding: 60px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     border-radius: 6px;
     position: relative;
+    z-index: 10;
   }
 
   /* --- 4. TYPOGRAPHY --- */
   h1, h2 {
     color: #0B1157; /* Navy Blue */
     font-weight: 800;
+    margin-top: 0;
   }
 
   h3 {
@@ -56,12 +74,23 @@
     font-weight: 700;
     border-bottom: 3px solid #78DCFF; /* Cyan Highlight */
     padding-bottom: 8px;
-    margin-top: 40px;
-    font-size: 1.5em;
+    margin-top: 50px;
+    font-size: 1.6em;
+  }
+  
+  h4 {
+    color: #0B1157;
+    font-size: 1.2em;
+    margin-top: 30px;
+    font-weight: 700;
   }
 
   strong {
     color: #0B1157;
+  }
+  
+  p, li {
+    font-size: 1.1em; /* Slightly larger text for readability */
   }
 
   /* --- 5. INTERACTIVE ELEMENTS --- */
@@ -78,13 +107,16 @@
 
   /* --- 6. IMAGES & CAPTIONS --- */
   figure {
-    margin: 30px 0;
+    margin: 40px 0;
     text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
   }
 
   img {
-    border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     max-width: 100%;
     height: auto;
   }
@@ -92,12 +124,9 @@
   figcaption {
     font-size: 0.9em;
     color: #555;
-    margin-top: 10px;
+    margin-top: 15px;
     font-style: italic;
-    background: #f0f4f8;
-    padding: 10px;
-    border-radius: 4px;
-    display: inline-block;
+    font-weight: 500;
   }
 
   /* --- 7. SPECIAL COMPONENTS --- */
@@ -107,15 +136,16 @@
     margin-bottom: 40px;
     color: #555;
     font-style: italic;
-    font-size: 0.95em;
+    font-size: 1em;
   }
 
   .callout-box {
     background-color: #E6F0FF; /* Very light blue */
     border-left: 6px solid #002BFF;
-    padding: 20px;
-    margin: 30px 0;
+    padding: 25px;
+    margin: 35px 0;
     border-radius: 0 4px 4px 0;
+    font-size: 1.05em;
   }
 
   .nav-bar {
@@ -125,26 +155,33 @@
     font-size: 0.85em;
     text-align: right;
     letter-spacing: 0.5px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   /* Mobile Responsiveness */
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .main-content {
-      padding: 20px;
+      padding: 30px 20px;
       margin-top: 0;
+      width: 90%;
     }
-    header h1 { font-size: 1.8em; }
+    .custom-header { padding: 40px 20px; }
+    .custom-header h1 { font-size: 1.8em; }
+    .nav-bar { text-align: center; }
   }
 </style>
+
+<div class="custom-body">
 
 <div class="nav-bar">
   <b>BREAKTHROUGH T1D</b> &nbsp;|&nbsp; RESEARCH &nbsp;|&nbsp; GET INVOLVED &nbsp;|&nbsp; DONATE
 </div>
 
-<header>
+<div class="custom-header">
   <h1>The Future of GLP-1 Research</h1>
   <p>An Analysis of Emerging Therapies for Type 1 Diabetes</p>
-</header>
+</div>
 
 <div class="main-content">
 
@@ -154,9 +191,9 @@
     <em>Reading time: approx. 6 minutes</em></p>
   </div>
 
-  <div style="background:#fafafa; padding:15px; border:1px solid #ddd; border-radius:4px; margin-bottom:30px;">
+  <div style="background:#fafafa; padding:20px; border:1px solid #ddd; border-radius:4px; margin-bottom:40px;">
     <strong>In this article:</strong>
-    <ul style="margin:10px 0 0 20px; padding:0; font-size:0.9em;">
+    <ul style="margin:10px 0 0 20px; padding:0; font-size:0.95em;">
       <li><a href="#what-is-glp1">What is GLP-1?</a></li>
       <li><a href="#the-science-of-glp-1">The Science & Structure</a></li>
       <li><a href="#breakthrough-in-oral-delivery">The Oral Delivery Breakthrough</a></li>
@@ -307,7 +344,7 @@
   <h3 id="status-of-small-molecule-oral-glp-1-agonists-non-peptides">Status of Small-Molecule Oral GLP-1 Agonists (Non-Peptides)</h3>
   <p>In early 2026, the landscape for oral GLP-1 receptor agonists has shifted significantly, with the first oral peptide pill for obesity receiving approval, while the next-generation small-molecule (non-peptide) pills have largely completed Phase 3 trials and are awaiting imminent regulatory decisions.</p>
   
-  <p><strong>LY3502970 (Orforglipron)</strong> represents a significant breakthrough in GLP-1 pharmacology. It is a small-molecule, non-peptide agonist that activates the receptor through a mechanism distinct from the native GLP-1 peptide.</p>
+  <p><strong>LY3502970 (Orforglipron)</strong> represents a significant breakthrough in GLP-1 pharmacology. It is a small-molecule, non-peptide agonist that activates the receptor through a mechanism distinct from the native GLP-1 peptide. </p>
   
   <div class="callout-box">
     <strong>Key Difference:</strong> Unlike the native GLP-1 peptide, which is a large molecule that spans the entire extracellular face of the receptor and inserts deep into the transmembrane core, LY3502970 binds in a much more compact, specific pocket.
@@ -327,4 +364,5 @@
     <figcaption>Figure 7. Structural basis for GLP-1 receptor activation by Orforglipron (orange). Source: (2020) Proc Natl Acad Sci U S A 117.</figcaption>
   </figure>
 
+</div>
 </div>
