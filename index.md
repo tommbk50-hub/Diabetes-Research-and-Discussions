@@ -334,9 +334,11 @@
     </div>
 
     <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
-        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Research Image 2</h5>
-        <img src="image2.jpg" alt="Research Image 2" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Caption for image 2</span>
+        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Teplizumab</h5>
+        <img src="image2.jpg" alt="Teplizumab" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px; line-height: 1.4;">
+            Teplizumab is the world’s first disease-modifying therapy for type 1 diabetes. Clinical trials found daily injections of the drug for two weeks delayed the onset of type 1 for up to three years.
+        </span>
     </div>
 
     <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
