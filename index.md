@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   
   <meta property="og:title" content="The Future of GLP-1 Research">
-  <meta property="og:description" content="An analysis of emerging Type 1 Diabetes therapies by Tom Knight.">
+  <meta property="og:description" content="An analysis of emerging T1D therapies by Thomas Knight.">
 </head>
 
 <style>
@@ -19,9 +19,9 @@
   body { background-color: #F7F7F7 !important; margin: 0 !important; padding: 0 !important; }
   html { scroll-behavior: smooth; }
 
-  /* --- TYPOGRAPHY --- */
+  /* --- TYPOGRAPHY (MATCHING BREAKTHROUGH T1D) --- */
   .custom-body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif; /* Body Text */
     color: #333;
     background-color: #F7F7F7;
     line-height: 1.7;
@@ -29,18 +29,18 @@
   }
 
   h1, h2, h3, h4 { 
-    color: #0B1157; 
-    font-family: 'Montserrat', sans-serif; 
+    color: #0B1157; /* Navy */
+    font-family: 'Montserrat', sans-serif; /* Headings */
     margin-top: 45px;
   }
 
   h3 {
-    color: #002BFF; 
-    border-bottom: 3px solid #78DCFF;
+    color: #002BFF; /* Breakthrough Blue */
+    border-bottom: 3px solid #78DCFF; /* Cyan Highlight */
     padding-bottom: 10px;
     font-size: 1.7em;
-    font-weight: 800;
-    text-transform: none;
+    font-weight: 800; /* Bolder to match news style */
+    text-transform: none; /* Keep mixed case for readability */
   }
   
   h4 {
@@ -85,8 +85,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
-    max-width: 1200px;
+    gap: 20px; /* Reduced gap */
+    max-width: 1400px; /* Increased overall width */
     margin: -60px auto 50px;
     position: relative;
     z-index: 10;
@@ -96,7 +96,7 @@
   /* --- MAIN CONTENT CARD --- */
   .main-content {
     flex: 1;
-    max-width: 800px;
+    max-width: 950px; /* Increased content width */
     background: white;
     padding: 70px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.1);
@@ -105,7 +105,7 @@
 
   /* --- SIDEBAR STYLES --- */
   .sidebar {
-    width: 280px;
+    width: 280px; /* Keep sidebar width the same */
     background: white;
     padding: 25px;
     border-radius: 8px;
@@ -126,12 +126,47 @@
     text-transform: uppercase;
   }
 
-  .sidebar-item { margin-bottom: 30px; text-align: left; }
-  .sidebar-item h5 { font-size: 0.95em; color: #002BFF; margin: 0 0 8px 0; font-weight: 700; line-height: 1.3; }
-  .sidebar-text { font-size: 0.85em; color: #555; font-family: 'Open Sans', sans-serif; margin-top: 5px; line-height: 1.5; }
-  .sidebar-citation { font-size: 0.7em; color: #888; font-style: italic; margin-top: 8px; display: block; border-left: 2px solid #ddd; padding-left: 8px; }
-  .sidebar-citation a { color: #888; text-decoration: none; transition: color 0.2s; }
-  .sidebar-citation a:hover { color: #002BFF; text-decoration: underline; }
+  .sidebar-item {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .sidebar-item h5 {
+    font-size: 0.95em;
+    color: #002BFF;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .sidebar-text {
+    font-size: 0.85em;
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 5px;
+    line-height: 1.5;
+  }
+  
+  .sidebar-citation {
+    font-size: 0.7em;
+    color: #888;
+    font-style: italic;
+    margin-top: 8px;
+    display: block;
+    border-left: 2px solid #ddd;
+    padding-left: 8px;
+  }
+  
+  /* Sidebar Links */
+  .sidebar-citation a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .sidebar-citation a:hover {
+    color: #002BFF;
+    text-decoration: underline;
+  }
 
   /* --- NAVIGATION BAR --- */
   .nav-bar {
@@ -173,7 +208,10 @@
     transition: all 0.2s;
     margin-top: -10px;
   }
-  .print-btn:hover { background: #002BFF; color: white; }
+  .print-btn:hover {
+    background: #002BFF;
+    color: white;
+  }
 
   /* --- COMPONENTS --- */
   figure {
@@ -186,9 +224,25 @@
     transition: transform 0.2s;
   }
   figure:hover { transform: translateY(-2px); }
+
   img { max-width: 100%; height: auto; border-radius: 4px; }
-  figcaption { font-size: 0.9em; color: #555; margin-top: 15px; font-family: 'Open Sans', sans-serif; font-style: italic; }
-  .callout-box { background-color: #E6F0FF; border-left: 6px solid #002BFF; padding: 25px; margin: 35px 0; font-size: 1.1em; border-radius: 0 6px 6px 0; }
+  
+  figcaption { 
+    font-size: 0.9em; 
+    color: #555; 
+    margin-top: 15px; 
+    font-family: 'Open Sans', sans-serif; 
+    font-style: italic; 
+  }
+
+  .callout-box {
+    background-color: #E6F0FF;
+    border-left: 6px solid #002BFF;
+    padding: 25px;
+    margin: 35px 0;
+    font-size: 1.1em;
+    border-radius: 0 6px 6px 0;
+  }
   
   /* --- FOOTER --- */
   .custom-footer {
@@ -215,7 +269,7 @@
   }
 
   /* Mobile Adjustments */
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     .page-container { flex-direction: column; align-items: center; margin-top: -30px; }
     .main-content { width: 100%; padding: 40px 30px; order: 1; }
     .sidebar { width: 100%; max-width: 800px; margin-bottom: 30px; position: static; order: 2; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
@@ -260,6 +314,30 @@
         <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Islet Cell Imaging</h5>
         <img src="microscopy.jpg" alt="Pancreatic Islet Cells" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Stem cell-derived beta cells (Melton Lab)</span>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Research Image 1</h5>
+        <img src="image1.jpg" alt="Research Image 1" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Caption for image 1</span>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Research Image 2</h5>
+        <img src="image2.jpg" alt="Research Image 2" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Caption for image 2</span>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Research Image 3</h5>
+        <img src="image3.jpg" alt="Research Image 3" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Caption for image 3</span>
+    </div>
+
+    <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Research Image 4</h5>
+        <img src="image4.jpg" alt="Research Image 4" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Caption for image 4</span>
     </div>
   </div>
 
