@@ -305,12 +305,9 @@
 <div class="page-container">
 
   <div class="sidebar">
-    <div class="sidebar-title">Global Impact</div>
+    <div class="sidebar-title">Breakthrough T1D Grant Information</div>
 
-    <div class="sidebar-item" style="border-bottom: 2px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 25px;">
-        <h5 style="color: #0B1157; font-size: 0.95em; margin-bottom: 10px; font-weight:700;">
-            Breakthrough T1D Grant Info
-        </h5>
+    <div class="sidebar-item" style="margin-bottom: 15px;">
         <div style="background-color: #E6F0FF; padding: 12px; border-left: 4px solid #002BFF; border-radius: 4px;">
             <a href="breakthrough_t1d_pre_award.html" style="font-weight: 700; color: #002BFF; text-decoration: none; display: block; margin-bottom: 4px;">
                 📄 Pre-award Instructions
@@ -320,19 +317,29 @@
             </span>
         </div>
     </div>
-    
-    <div style="text-align: center; margin-bottom: 30px;">
-      <span style="font-size: 2.5em; display: block; margin-bottom: 10px;">🧬</span>
-      <span style="font-size: 1.8em; font-weight: 800; color: #002BFF; display: block;">400+</span>
-      <span class="sidebar-text">Active research studies funded worldwide</span>
-    </div>
-    
-    <div style="text-align: center; margin-bottom: 30px;">
-      <span style="font-size: 2.5em; display: block; margin-bottom: 10px;">🌍</span>
-      <span style="font-size: 1.8em; font-weight: 800; color: #002BFF; display: block;">21</span>
-      <span class="sidebar-text">Countries where research is taking place</span>
+
+    <div class="sidebar-item" style="margin-bottom: 15px;">
+        <div style="background-color: #E6F0FF; padding: 12px; border-left: 4px solid #002BFF; border-radius: 4px;">
+            <a href="#" style="font-weight: 700; color: #002BFF; text-decoration: none; display: block; margin-bottom: 4px;">
+                📋 Post-Award Instructions and FAQs
+            </a>
+            <span class="sidebar-text" style="font-size: 0.8em; line-height: 1.4; display: block;">
+                Managing active grants, financial reporting, and milestones.
+            </span>
+        </div>
     </div>
 
+    <div class="sidebar-item" style="border-bottom: 2px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 25px;">
+        <div style="background-color: #E6F0FF; padding: 12px; border-left: 4px solid #002BFF; border-radius: 4px;">
+            <a href="#" style="font-weight: 700; color: #002BFF; text-decoration: none; display: block; margin-bottom: 4px;">
+                📘 Grant Handbook
+            </a>
+            <span class="sidebar-text" style="font-size: 0.8em; line-height: 1.4; display: block;">
+                Comprehensive policy guide for all funding mechanisms.
+            </span>
+        </div>
+    </div>
+    
     <div style="text-align: center; margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
         <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Islet Cell Imaging</h5>
         <img src="microscopy.jpg" alt="Pancreatic Islet Cells" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
