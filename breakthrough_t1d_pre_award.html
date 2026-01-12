@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 
   <style>
-    /* --- BRANDING & LAYOUT (Matches your Main Site) --- */
+    /* --- BRANDING & LAYOUT --- */
     body { margin: 0; padding: 0; background-color: #F7F7F7; font-family: 'Open Sans', sans-serif; color: #333; line-height: 1.6; }
     
     /* Header */
@@ -31,7 +31,7 @@
     .container { max-width: 900px; margin: -40px auto 50px; background: white; padding: 50px; border-radius: 8px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); position: relative; z-index: 10; }
 
     /* Typography */
-    h2 { color: #0B1157; font-family: 'Montserrat', sans-serif; font-weight: 700; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; }
+    h2 { color: #0B1157; font-family: 'Montserrat', sans-serif; font-weight: 700; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 50px; }
     h3 { color: #002BFF; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-top: 30px; }
     
     /* Interactive Elements */
@@ -39,14 +39,22 @@
     .back-link:hover { text-decoration: underline; }
 
     /* Role Badges */
-    .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 0.8em; margin-right: 8px; font-family: 'Montserrat', sans-serif; }
+    .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 0.8em; margin-right: 8px; font-family: 'Montserrat', sans-serif; min-width: 35px; text-align: center; }
     .badge-pi { background-color: #e3f2fd; color: #0d47a1; border: 1px solid #bbdefb; }
     .badge-ro { background-color: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9; }
     .badge-fo { background-color: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; }
+    .badge-rd { background-color: #f3e5f5; color: #7b1fa2; border: 1px solid #e1bee7; } /* Purple for Delegate */
+    .badge-tto { background-color: #eceff1; color: #455a64; border: 1px solid #cfd8dc; } /* Grey for TTO */
 
     /* FAQ Box */
     .faq-item { background: #f8faff; border-left: 4px solid #002BFF; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; }
     .faq-question { display: block; font-weight: 700; color: #0B1157; margin-bottom: 8px; font-family: 'Montserrat', sans-serif; }
+
+    /* Table Styles */
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.9em; }
+    th { background: #0B1157; color: white; padding: 12px; text-align: left; font-family: 'Montserrat', sans-serif; }
+    td { border: 1px solid #eee; padding: 12px; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
     
     /* Footer */
     footer { text-align: center; padding: 40px; color: #666; font-size: 0.9em; font-family: 'Montserrat', sans-serif; }
@@ -63,63 +71,101 @@
 
   <div class="custom-header">
     <h1>Pre-Award Instructions</h1>
-    <p>Guide for RMS360 Grant Management System</p>
+    <p>Official Guide for RMS360 Grant Management System</p>
   </div>
 
   <div class="container">
     <a href="index.html" class="back-link">← Back to Global Impact</a>
 
-    <p>This guide outlines the essential steps for researchers and administrators using <strong>RMS360</strong>, the grant management system for Breakthrough T1D (formerly JDRF).</p>
+    <p>This guide outlines the essential steps for researchers and administrators using <strong>RMS360</strong>, the grant management system for Breakthrough T1D (formerly JDRF)[cite: 1].</p>
 
-    <h2 id="getting-started">Getting Started with RMS360</h2>
+    <h2 id="getting-started">1. Getting Started</h2>
     <ul>
-      <li><strong>Browser Compatibility:</strong> For optimal functionality, use <strong>Google Chrome</strong> or <strong>Mozilla Firefox</strong>.</li>
-      <li><strong>Registration:</strong> New users must click the orange <strong>REGISTER</strong> button on the RMS360 login page.</li>
-      <li><strong>Save Often:</strong> Always click "Save Draft" frequently to prevent data loss, especially in the Budget sections.</li>
+      <li><strong>Browser Requirement:</strong> For optimal functionality, you must use <strong>Google Chrome</strong> or <strong>Mozilla Firefox</strong>[cite: 8].</li>
+      <li><strong>Registration:</strong> New users must click the orange <strong>REGISTER</strong> button on the login page[cite: 9]. If your organization does not appear in the dropdown menu during registration, you must submit a "new organization registration" form[cite: 11].</li>
+      <li><strong>User Profile:</strong> Before beginning an application, ensure you update the mandatory fields in the <strong>Profile</strong> section (accessed via your initials in the upper right corner)[cite: 14].</li>
+      <li><strong>Data Safety:</strong> Click "Save Draft" frequently to prevent data loss, especially when working in the Budget sections [cite: 18-19].</li>
     </ul>
 
-    <h2 id="roles">Key User Roles</h2>
+    <h2 id="roles">2. Key User Roles</h2>
     <p>Understanding the distinction between user roles is critical for successful submission.</p>
     
     <div style="margin-bottom: 15px;">
       <span class="badge badge-pi">PI</span> <strong>Principal Investigator</strong><br>
-      The lead researcher who writes the science. They can complete the application but <em>cannot</em> formally submit it to Breakthrough T1D; they must submit it to their Research Officer first.
+      The lead researcher. They can complete most sections of the application but <strong>cannot</strong> formally submit the proposal to Breakthrough T1D[cite: 26]. They must submit it to their Research Officer first.
     </div>
 
     <div style="margin-bottom: 15px;">
       <span class="badge badge-ro">RO</span> <strong>Research Officer (University Admin)</strong><br>
-      Represents the institution. They review the proposal, approve the budget, and hold the authority to formally submit the application to Breakthrough T1D.
+      Represents the institution. They review the proposal, approve the budget, and hold the sole authority to formally submit the application to Breakthrough T1D [cite: 29-31].
     </div>
 
     <div style="margin-bottom: 15px;">
       <span class="badge badge-fo">FO</span> <strong>Financial Officer</strong><br>
-      Responsible for post-award financial reporting. They must be identified and linked to the grant during the application phase.
+      Responsible for post-award financial reporting. They complete the expense column in expenditure reports and certify their accuracy [cite: 33-34].
     </div>
 
-    <h2 id="workflow">The Application Workflow</h2>
-    <ol>
-      <li><strong>LOI (Letter of Intent):</strong> The PI submits a brief LOI.</li>
-      <li><strong>Invitation:</strong> Successful LOIs are invited to submit a full proposal.</li>
-      <li><strong>Validation:</strong> Before submitting, the PI must click "Validate" to check for missing fields.</li>
-      <li><strong>Institutional Submission:</strong> The PI submits the proposal to their <strong>Research Officer (RO)</strong>.</li>
-      <li><strong>Final Submission:</strong> The RO reviews and submits the proposal to <strong>Breakthrough T1D</strong>.</li>
-    </ol>
+    <div style="margin-bottom: 15px;">
+      <span class="badge badge-rd">RD</span> <strong>Research Delegate</strong><br>
+      Designated by the PI to assist with submissions. They can edit most of the proposal (Scientific Progress Reports, etc.) but cannot submit any items [cite: 36-39].
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+      <span class="badge badge-tto">TTO</span> <strong>Technology Transfer Office</strong><br>
+      Designated by the institution to report all Intellectual Property to Breakthrough T1D[cite: 41].
+    </div>
 
-    <h2 id="faqs">Frequently Asked Questions</h2>
+    <h2 id="biosketch">3. Biosketch Guidelines</h2>
+    <p>RMS360 handles biosketches differently depending on the role. Incorrect uploads are a common cause of errors.</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Role</th>
+          <th>Action Required</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Principal Investigator (PI)</strong></td>
+          <td>Upload to your <strong>User Profile</strong> first. Then, in the application Contacts tab, check the box <em>"My Biosketch is up to date"</em> to auto-append it [cite: 144-146].</td>
+        </tr>
+        <tr>
+          <td><strong>Co-PI</strong></td>
+          <td>Must be registered in RMS360. They must upload their biosketch to their own Profile. It will auto-append once they are linked to the grant [cite: 170-171].</td>
+        </tr>
+        <tr>
+          <td><strong>Key Personnel</strong></td>
+          <td>Do <strong>not</strong> need RMS360 accounts. You must manually upload their biosketches as a PDF in the "Additional Attachments" tab [cite: 172-173].</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 id="workflow">4. Submission Workflow</h2>
+    <div style="background-color: #f0f4f8; padding: 20px; border-radius: 6px; margin-top: 15px;">
+        <p><strong>Step 1: Letter of Intent (LOI)</strong><br>
+        The PI completes the LOI and clicks the <strong>Submit LOI</strong> button[cite: 199].</p>
+
+        <p><strong>Step 2: Full Proposal (Two-Stage Submission)</strong><br>
+        1. <strong>PI Action:</strong> The PI completes the proposal and clicks "Validate." Once valid, the PI clicks <strong>"Submit to RO"</strong>[cite: 224].<br>
+        2. <strong>RO Action:</strong> The RO reviews the budget in the "Pending Budget Approval" tab. Once approved, the RO clicks <strong>"Submit to JDRF"</strong> [cite: 256-259].</p>
+    </div>
+
+    <h2 id="faqs">5. Troubleshooting & FAQs</h2>
 
     <div class="faq-item">
       <span class="faq-question">Q: How do I add my RO and FO to a proposal?</span>
-      Go to the <strong>Contacts</strong> tab within the application. Select your RO and FO from the dropdown menus. If they are not listed, use the "Click here to create an RO/FO" link to invite them via email.
-    </div>
-
-    <div class="faq-item">
-      <span class="faq-question">Q: Should I upload my Biosketch in the "Attachments" tab?</span>
-      <strong>No.</strong> The PI must upload their Biosketch to their <strong>User Profile</strong> first (My Profile > Edit). Then, in the application's Contacts tab, check the box that says "My Biosketch is up to date." It will auto-append to the PDF.
+      Go to the <strong>Contacts</strong> tab. Select your RO and FO from the dropdown menus[cite: 83]. If they are not listed, use the "Click here to create an RO/FO" link to invite them[cite: 98]. The RO must be approved by your institution before they appear in the list[cite: 119].
     </div>
 
     <div class="faq-item">
       <span class="faq-question">Q: I submitted my proposal to the RO prematurely. How do I get it back?</span>
-      Contact your Research Officer (RO). They can "Reject" the proposal in the system, which returns it to your "My Tasks" queue for editing.
+      You cannot retrieve it yourself. You must contact your Research Officer (RO). They have a <strong>"Send back to PI"</strong> button in their approval tab which returns the proposal to your queue for editing [cite: 284-285].
+    </div>
+    
+    <div class="faq-item">
+        <span class="faq-question">Q: What if I forget my password?</span>
+        Use the "Forgot your username" or "Forgot your password" links on the main login page[cite: 12].
     </div>
 
     <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
