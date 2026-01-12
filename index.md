@@ -85,8 +85,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px; /* Reduced gap */
-    max-width: 1400px; /* Increased overall width */
+    gap: 20px;
+    max-width: 1400px;
     margin: -60px auto 50px;
     position: relative;
     z-index: 10;
@@ -96,7 +96,7 @@
   /* --- MAIN CONTENT CARD --- */
   .main-content {
     flex: 1;
-    max-width: 950px; /* Increased content width */
+    max-width: 950px;
     background: white;
     padding: 70px;
     box-shadow: 0 20px 50px rgba(0,0,0,0.1);
@@ -105,7 +105,7 @@
 
   /* --- SIDEBAR STYLES --- */
   .sidebar {
-    width: 280px; /* Keep sidebar width the same */
+    width: 280px;
     background: white;
     padding: 25px;
     border-radius: 8px;
@@ -157,7 +157,6 @@
     padding-left: 8px;
   }
   
-  /* Sidebar Links */
   .sidebar-citation a {
     color: #888;
     text-decoration: none;
@@ -165,6 +164,16 @@
   }
   .sidebar-citation a:hover {
     color: #002BFF;
+    text-decoration: underline;
+  }
+  
+  /* Link style inside sidebar text */
+  .sidebar-text a {
+    color: #002BFF;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .sidebar-text a:hover {
     text-decoration: underline;
   }
 
@@ -317,9 +326,11 @@
     </div>
 
     <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
-        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Research Image 1</h5>
-        <img src="image1.jpg" alt="Research Image 1" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Caption for image 1</span>
+        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Vertex’s clinical trials of lab-grown islet cells</h5>
+        <img src="image1.jpg" alt="Vertex VX-880 Trial" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px; line-height: 1.4;">
+            Vertex is running a clinical trial in which people with type 1 diabetes receive a dose of VX-880, an investigational product that contains lab-grown islet cells.
+        </span>
     </div>
 
     <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
@@ -329,15 +340,19 @@
     </div>
 
     <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
-        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Research Image 3</h5>
-        <img src="image3.jpg" alt="Research Image 3" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Caption for image 3</span>
+        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Encapsulated islet cells</h5>
+        <img src="image3.jpg" alt="Encapsulated Islet Cells" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px; line-height: 1.4;">
+            Vertex is running another clinical trial using these same islet cells enclosed in a protective casing, a technique called encapsulation.
+        </span>
     </div>
 
     <div style="text-align: center; margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
-        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Research Image 4</h5>
-        <img src="image4.jpg" alt="Research Image 4" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Caption for image 4</span>
+        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Get Involved in Research</h5>
+        <img src="image4.jpg" alt="Clinical Trials" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px; line-height: 1.4;">
+            <a href="https://t1dstudy.com/" target="_blank">Find out if you're eligible to take part in clinical trials</a>
+        </span>
     </div>
   </div>
 
