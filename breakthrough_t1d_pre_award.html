@@ -1,120 +1,136 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Breakthrough T1D Pre-award Instructions | Diabetes Research Hub</title>
-    <link rel="stylesheet" href="/assets/css/style.css?v=842367d35b1c9371715408d6c7702dbb13271796">
-    <style>
-        /* Custom styles for this specific guide */
-        .faq-section { margin-bottom: 30px; }
-        .faq-item { background: #f9f9f9; padding: 15px; border-left: 4px solid #005eb8; margin-bottom: 15px; }
-        .faq-question { font-weight: bold; color: #333; display: block; margin-bottom: 5px; cursor: pointer; }
-        .faq-answer { display: block; color: #555; }
-        .role-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: bold; margin-right: 5px; }
-        .role-pi { background-color: #e3f2fd; color: #0d47a1; } /* Blue for PI */
-        .role-ro { background-color: #e8f5e9; color: #1b5e20; } /* Green for RO */
-        .breadcrumbs { margin-bottom: 20px; font-size: 0.9em; }
-        .breadcrumbs a { text-decoration: none; color: #005eb8; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Breakthrough T1D Pre-award Instructions</title>
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📄</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* --- BRANDING & LAYOUT (Matches your Main Site) --- */
+    body { margin: 0; padding: 0; background-color: #F7F7F7; font-family: 'Open Sans', sans-serif; color: #333; line-height: 1.6; }
+    
+    /* Header */
+    .custom-header {
+      background: linear-gradient(135deg, #002BFF 0%, #0020c2 100%);
+      color: white; padding: 60px 20px; text-align: center; border-bottom: 8px solid #0B1157;
+    }
+    .custom-header h1 { font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 2.5em; margin: 0; text-transform: uppercase; letter-spacing: 1px; }
+    .custom-header p { font-family: 'Montserrat', sans-serif; font-size: 1.2em; opacity: 0.9; margin-top: 10px; }
+
+    /* Nav Bar */
+    .nav-bar { background: #0B1157; color: white; padding: 15px 30px; text-align: right; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 0.85em; }
+    .nav-bar a { color: white; text-decoration: none; margin-left: 20px; transition: color 0.2s; }
+    .nav-bar a:hover { color: #78DCFF; }
+
+    /* Content Container */
+    .container { max-width: 900px; margin: -40px auto 50px; background: white; padding: 50px; border-radius: 8px; box-shadow: 0 20px 50px rgba(0,0,0,0.1); position: relative; z-index: 10; }
+
+    /* Typography */
+    h2 { color: #0B1157; font-family: 'Montserrat', sans-serif; font-weight: 700; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 40px; }
+    h3 { color: #002BFF; font-family: 'Montserrat', sans-serif; font-weight: 700; margin-top: 30px; }
+    
+    /* Interactive Elements */
+    .back-link { display: inline-block; margin-bottom: 20px; color: #002BFF; text-decoration: none; font-weight: 600; font-family: 'Montserrat', sans-serif; }
+    .back-link:hover { text-decoration: underline; }
+
+    /* Role Badges */
+    .badge { display: inline-block; padding: 4px 8px; border-radius: 4px; font-weight: bold; font-size: 0.8em; margin-right: 8px; font-family: 'Montserrat', sans-serif; }
+    .badge-pi { background-color: #e3f2fd; color: #0d47a1; border: 1px solid #bbdefb; }
+    .badge-ro { background-color: #e8f5e9; color: #1b5e20; border: 1px solid #c8e6c9; }
+    .badge-fo { background-color: #fff3e0; color: #e65100; border: 1px solid #ffe0b2; }
+
+    /* FAQ Box */
+    .faq-item { background: #f8faff; border-left: 4px solid #002BFF; padding: 20px; margin-bottom: 20px; border-radius: 0 4px 4px 0; }
+    .faq-question { display: block; font-weight: 700; color: #0B1157; margin-bottom: 8px; font-family: 'Montserrat', sans-serif; }
+    
+    /* Footer */
+    footer { text-align: center; padding: 40px; color: #666; font-size: 0.9em; font-family: 'Montserrat', sans-serif; }
+    footer a { color: #002BFF; text-decoration: none; }
+  </style>
 </head>
 <body>
-    <div class="wrapper">
-        <header>
-            <h1><a href="index.html">Breakthrough Diabetes Research</a></h1>
-            <p>Insights into Type 1 Diabetes Therapies</p>
-            <p class="view"><a href="https://github.com/tommbk50-hub/Diabetes-Research-and-Discussions">View the Project on GitHub <small>tommbk50-hub/Diabetes-Research-and-Discussions</small></a></p>
-            
-            <ul>
-                <li><a href="https://breakthrought1d.org.uk/"><strong>BREAKTHROUGH T1D UK</strong></a></li>
-                <li><a href="index.html"><strong>HOME</strong></a></li>
-                <li><a href="cv.html"><strong>MY CV</strong></a></li>
-            </ul>
-        </header>
 
-        <section>
-            <div class="breadcrumbs">
-                <a href="index.html">← Back to Home</a>
-            </div>
+  <div class="nav-bar">
+    <a href="index.html">HOME</a>
+    <a href="https://breakthrought1d.org.uk/" target="_blank">BREAKTHROUGH T1D</a>
+    <a href="cv.html">MY CV</a>
+  </div>
 
-            <h1>Breakthrough T1D: Pre-award Instructions & FAQs</h1>
-            <p>This guide outlines the essential steps for researchers and administrators using <strong>RMS360</strong>, the grant management system for Breakthrough T1D (formerly JDRF).</p>
+  <div class="custom-header">
+    <h1>Pre-Award Instructions</h1>
+    <p>Guide for RMS360 Grant Management System</p>
+  </div>
 
-            <hr>
+  <div class="container">
+    <a href="index.html" class="back-link">← Back to Global Impact</a>
 
-            <h2 id="getting-started">Getting Started with RMS360</h2>
-            <ul>
-                <li><strong>Browser Compatibility:</strong> For optimal functionality, use <strong>Google Chrome</strong> or <strong>Mozilla Firefox</strong>. Avoid using Safari or Edge if possible.</li>
-                <li><strong>Registration:</strong> New users must click the orange <strong>REGISTER</strong> button on the RMS360 login page.</li>
-                <li><strong>Save Often:</strong> Always click "Save Draft" frequently to prevent data loss, especially in the Budget sections.</li>
-            </ul>
+    <p>This guide outlines the essential steps for researchers and administrators using <strong>RMS360</strong>, the grant management system for Breakthrough T1D (formerly JDRF).</p>
 
-            <h2 id="roles">Key Roles in RMS360</h2>
-            <p>Understanding who does what is critical for a successful submission.</p>
-            
-            <div class="faq-item">
-                <span class="role-badge role-pi">PI</span> <strong>Principal Investigator (Researcher)</strong>
-                <p>Writes the science. Can complete most sections of the application but <em>cannot</em> formally submit the final proposal to Breakthrough T1D (only to their institution).</p>
-            </div>
+    <h2 id="getting-started">Getting Started with RMS360</h2>
+    <ul>
+      <li><strong>Browser Compatibility:</strong> For optimal functionality, use <strong>Google Chrome</strong> or <strong>Mozilla Firefox</strong>.</li>
+      <li><strong>Registration:</strong> New users must click the orange <strong>REGISTER</strong> button on the RMS360 login page.</li>
+      <li><strong>Save Often:</strong> Always click "Save Draft" frequently to prevent data loss, especially in the Budget sections.</li>
+    </ul>
 
-            <div class="faq-item">
-                <span class="role-badge role-ro">RO</span> <strong>Research Officer (University Admin)</strong>
-                <p>Represents the institution. Responsible for reviewing the PI's proposal, approving the budget, and formally submitting the application to Breakthrough T1D.</p>
-            </div>
-
-            <div class="faq-item">
-                <span class="role-badge role-ro">FO</span> <strong>Financial Officer</strong>
-                <p>Responsible for financial reporting and expenditure reports post-award. They must be added to the grant during the application phase.</p>
-            </div>
-
-            <h2 id="process">The Application Workflow</h2>
-            <ol>
-                <li><strong>LOI (Letter of Intent):</strong> The PI submits a brief LOI.</li>
-                <li><strong>Invitation:</strong> Successful LOIs are invited to submit a full proposal.</li>
-                <li><strong>Drafting:</strong> The PI writes the proposal and uploads attachments (biosketches, etc.).</li>
-                <li><strong>Validation:</strong> The PI must click "Validate" to check for errors.</li>
-                <li><strong>Institutional Submission:</strong> The PI submits the proposal to their <strong>Research Officer (RO)</strong>.</li>
-                <li><strong>Final Submission:</strong> The RO reviews and submits the proposal to <strong>Breakthrough T1D</strong>.</li>
-            </ol>
-
-            <hr>
-
-            <h2 id="faqs">Frequently Asked Questions</h2>
-
-            <div class="faq-section">
-                <h3>Application Content</h3>
-                
-                <div class="faq-item">
-                    <span class="faq-question">Q: How do I add my RO and FO to a proposal?</span>
-                    <span class="faq-answer">Go to the <strong>Contacts</strong> tab. Select your RO and FO from the dropdown menus. If they are not listed, use the "Click here to create an RO/FO" link to invite them.</span>
-                </div>
-
-                <div class="faq-item">
-                    <span class="faq-question">Q: Should I include my Biosketch in the "Additional Attachments" tab?</span>
-                    <span class="faq-answer"><strong>No.</strong> The PI must upload their Biosketch to their <strong>User Profile</strong> first (My Profile > Edit). Then, in the application Contacts tab, check the box that says "My Biosketch is up to date." It will auto-append.</span>
-                </div>
-
-                <div class="faq-item">
-                    <span class="faq-question">Q: What about Co-PIs and Key Personnel Biosketches?</span>
-                    <span class="faq-answer">Since Key Personnel may not have RMS360 profiles, you <strong>should</strong> upload their biosketches in the "Additional Attachments" tab or append them to the Research Plan.</span>
-                </div>
-
-                <h3>Submission Errors</h3>
-
-                <div class="faq-item">
-                    <span class="faq-question">Q: I prematurely submitted my proposal to the RO. What do I do?</span>
-                    <span class="faq-answer">Contact your Research Officer (RO). They can "Reject" the proposal in the system, which returns it to your queue for editing.</span>
-                </div>
-            </div>
-
-            <p style="font-size: 0.8em; color: #777;"><em>Reference: BT1D-RMS360-Pre-Award-Instructions-and-FAQs-REBRANDED.pdf (April 2025)</em></p>
-            
-            <footer>
-                <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-            </footer>
-        </section>
+    <h2 id="roles">Key User Roles</h2>
+    <p>Understanding the distinction between user roles is critical for successful submission.</p>
+    
+    <div style="margin-bottom: 15px;">
+      <span class="badge badge-pi">PI</span> <strong>Principal Investigator</strong><br>
+      The lead researcher who writes the science. They can complete the application but <em>cannot</em> formally submit it to Breakthrough T1D; they must submit it to their Research Officer first.
     </div>
-    <script src="/assets/js/scale.fix.js"></script>
+
+    <div style="margin-bottom: 15px;">
+      <span class="badge badge-ro">RO</span> <strong>Research Officer (University Admin)</strong><br>
+      Represents the institution. They review the proposal, approve the budget, and hold the authority to formally submit the application to Breakthrough T1D.
+    </div>
+
+    <div style="margin-bottom: 15px;">
+      <span class="badge badge-fo">FO</span> <strong>Financial Officer</strong><br>
+      Responsible for post-award financial reporting. They must be identified and linked to the grant during the application phase.
+    </div>
+
+    <h2 id="workflow">The Application Workflow</h2>
+    <ol>
+      <li><strong>LOI (Letter of Intent):</strong> The PI submits a brief LOI.</li>
+      <li><strong>Invitation:</strong> Successful LOIs are invited to submit a full proposal.</li>
+      <li><strong>Validation:</strong> Before submitting, the PI must click "Validate" to check for missing fields.</li>
+      <li><strong>Institutional Submission:</strong> The PI submits the proposal to their <strong>Research Officer (RO)</strong>.</li>
+      <li><strong>Final Submission:</strong> The RO reviews and submits the proposal to <strong>Breakthrough T1D</strong>.</li>
+    </ol>
+
+    <h2 id="faqs">Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <span class="faq-question">Q: How do I add my RO and FO to a proposal?</span>
+      Go to the <strong>Contacts</strong> tab within the application. Select your RO and FO from the dropdown menus. If they are not listed, use the "Click here to create an RO/FO" link to invite them via email.
+    </div>
+
+    <div class="faq-item">
+      <span class="faq-question">Q: Should I upload my Biosketch in the "Attachments" tab?</span>
+      <strong>No.</strong> The PI must upload their Biosketch to their <strong>User Profile</strong> first (My Profile > Edit). Then, in the application's Contacts tab, check the box that says "My Biosketch is up to date." It will auto-append to the PDF.
+    </div>
+
+    <div class="faq-item">
+      <span class="faq-question">Q: I submitted my proposal to the RO prematurely. How do I get it back?</span>
+      Contact your Research Officer (RO). They can "Reject" the proposal in the system, which returns it to your "My Tasks" queue for editing.
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #eee; margin: 40px 0;">
+    <p style="font-size: 0.8em; color: #888;"><em>Reference: BT1D-RMS360-Pre-Award-Instructions-and-FAQs-REBRANDED.pdf (April 2025)</em></p>
+
+  </div>
+
+  <footer>
+    <p>Thomas Knight | Research & Involvement Candidate</p>
+    <a href="index.html">Return to Home</a>
+  </footer>
+
 </body>
 </html>
