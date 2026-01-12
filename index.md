@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   
   <meta property="og:title" content="The Future of GLP-1 Research">
-  <meta property="og:description" content="An analysis of emerging T1D therapies by Thomas Knight.">
+  <meta property="og:description" content="An analysis of emerging Type 1 Diabetes therapies by Tom Knight.">
 </head>
 
 <style>
