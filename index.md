@@ -19,9 +19,9 @@
   body { background-color: #F7F7F7 !important; margin: 0 !important; padding: 0 !important; }
   html { scroll-behavior: smooth; }
 
-  /* --- TYPOGRAPHY (MATCHING BREAKTHROUGH T1D) --- */
+  /* --- TYPOGRAPHY --- */
   .custom-body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif; /* Body Text */
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     color: #333;
     background-color: #F7F7F7;
     line-height: 1.7;
@@ -29,18 +29,18 @@
   }
 
   h1, h2, h3, h4 { 
-    color: #0B1157; /* Navy */
-    font-family: 'Montserrat', sans-serif; /* Headings */
+    color: #0B1157; 
+    font-family: 'Montserrat', sans-serif; 
     margin-top: 45px;
   }
 
   h3 {
-    color: #002BFF; /* Breakthrough Blue */
-    border-bottom: 3px solid #78DCFF; /* Cyan Highlight */
+    color: #002BFF; 
+    border-bottom: 3px solid #78DCFF;
     padding-bottom: 10px;
     font-size: 1.7em;
-    font-weight: 800; /* Bolder to match news style */
-    text-transform: none; /* Keep mixed case for readability */
+    font-weight: 800;
+    text-transform: none;
   }
   
   h4 {
@@ -105,7 +105,7 @@
 
   /* --- SIDEBAR STYLES --- */
   .sidebar {
-    width: 280px; /* Slightly wider to accommodate text */
+    width: 280px;
     background: white;
     padding: 25px;
     border-radius: 8px;
@@ -126,47 +126,12 @@
     text-transform: uppercase;
   }
 
-  .sidebar-item {
-    margin-bottom: 30px;
-    text-align: left;
-  }
-
-  .sidebar-item h5 {
-    font-size: 0.95em;
-    color: #002BFF;
-    margin: 0 0 8px 0;
-    font-weight: 700;
-    line-height: 1.3;
-  }
-
-  .sidebar-text {
-    font-size: 0.85em;
-    color: #555;
-    font-family: 'Open Sans', sans-serif;
-    margin-top: 5px;
-    line-height: 1.5;
-  }
-  
-  .sidebar-citation {
-    font-size: 0.7em;
-    color: #888;
-    font-style: italic;
-    margin-top: 8px;
-    display: block;
-    border-left: 2px solid #ddd;
-    padding-left: 8px;
-  }
-  
-  /* Sidebar Links */
-  .sidebar-citation a {
-    color: #888;
-    text-decoration: none;
-    transition: color 0.2s;
-  }
-  .sidebar-citation a:hover {
-    color: #002BFF;
-    text-decoration: underline;
-  }
+  .sidebar-item { margin-bottom: 30px; text-align: left; }
+  .sidebar-item h5 { font-size: 0.95em; color: #002BFF; margin: 0 0 8px 0; font-weight: 700; line-height: 1.3; }
+  .sidebar-text { font-size: 0.85em; color: #555; font-family: 'Open Sans', sans-serif; margin-top: 5px; line-height: 1.5; }
+  .sidebar-citation { font-size: 0.7em; color: #888; font-style: italic; margin-top: 8px; display: block; border-left: 2px solid #ddd; padding-left: 8px; }
+  .sidebar-citation a { color: #888; text-decoration: none; transition: color 0.2s; }
+  .sidebar-citation a:hover { color: #002BFF; text-decoration: underline; }
 
   /* --- NAVIGATION BAR --- */
   .nav-bar {
@@ -208,10 +173,7 @@
     transition: all 0.2s;
     margin-top: -10px;
   }
-  .print-btn:hover {
-    background: #002BFF;
-    color: white;
-  }
+  .print-btn:hover { background: #002BFF; color: white; }
 
   /* --- COMPONENTS --- */
   figure {
@@ -224,25 +186,9 @@
     transition: transform 0.2s;
   }
   figure:hover { transform: translateY(-2px); }
-
   img { max-width: 100%; height: auto; border-radius: 4px; }
-  
-  figcaption { 
-    font-size: 0.9em; 
-    color: #555; 
-    margin-top: 15px; 
-    font-family: 'Open Sans', sans-serif; 
-    font-style: italic; 
-  }
-
-  .callout-box {
-    background-color: #E6F0FF;
-    border-left: 6px solid #002BFF;
-    padding: 25px;
-    margin: 35px 0;
-    font-size: 1.1em;
-    border-radius: 0 6px 6px 0;
-  }
+  figcaption { font-size: 0.9em; color: #555; margin-top: 15px; font-family: 'Open Sans', sans-serif; font-style: italic; }
+  .callout-box { background-color: #E6F0FF; border-left: 6px solid #002BFF; padding: 25px; margin: 35px 0; font-size: 1.1em; border-radius: 0 6px 6px 0; }
   
   /* --- FOOTER --- */
   .custom-footer {
@@ -284,8 +230,8 @@
 <div class="nav-bar">
   <a href="https://breakthrought1d.org.uk/" target="_blank"><b>BREAKTHROUGH T1D UK</b></a>
   <a href="https://breakthrought1d.org.uk/about-breakthrough-t1d-uk-and-our-impact/our-research/" target="_blank">RESEARCH</a>
-  <a href="https://breakthrought1d.org.uk/how-to-help/" target="_blank">GET INVOLVED</a>
-  <a href="https://breakthrought1d.org.uk/how-to-help/give/donate/" target="_blank" style="color:#78DCFF !important;">DONATE</a>
+  <a href="cv.html" style="color:#78DCFF !important;">MY CV</a>
+  <a href="https://breakthrought1d.org.uk/how-to-help/give/donate/" target="_blank">DONATE</a>
 </div>
 
 <div class="custom-header">
@@ -308,6 +254,12 @@
       <span style="font-size: 2.5em; display: block; margin-bottom: 10px;">🌍</span>
       <span style="font-size: 1.8em; font-weight: 800; color: #002BFF; display: block;">21</span>
       <span class="sidebar-text">Countries where research is taking place</span>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h5 style="color: #0B1157; font-size: 0.9em; margin-bottom: 10px; font-weight:700;">Islet Cell Imaging</h5>
+        <img src="microscopy.jpg" alt="Pancreatic Islet Cells" style="width: 100%; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        <span class="sidebar-text" style="font-size: 0.75em; display: block; margin-top: 5px;">Stem cell-derived beta cells (Melton Lab)</span>
     </div>
   </div>
 
