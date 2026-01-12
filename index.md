@@ -331,7 +331,7 @@
       <p style="margin-top: 0;">
         <strong>By Thomas Knight</strong><br>
         <a href="https://www.linkedin.com/in/tom-knight-340784151/" target="_blank" style="color: #002BFF; font-weight: 600; text-decoration: none;">Connect on LinkedIn</a><br>
-        Research Scientist, Research & Involvement Candidate | January 2026<br>
+        Research & Involvement Candidate | January 2026<br>
         <em>Reading time: approx. 6 minutes</em>
       </p>
     </div>
