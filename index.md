@@ -306,6 +306,20 @@
 
   <div class="sidebar">
     <div class="sidebar-title">Global Impact</div>
+
+    <div class="sidebar-item" style="border-bottom: 2px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 25px;">
+        <h5 style="color: #0B1157; font-size: 0.95em; margin-bottom: 10px; font-weight:700;">
+            Breakthrough T1D Grant Info
+        </h5>
+        <div style="background-color: #E6F0FF; padding: 12px; border-left: 4px solid #002BFF; border-radius: 4px;">
+            <a href="breakthrough_t1d_pre_award.html" style="font-weight: 700; color: #002BFF; text-decoration: none; display: block; margin-bottom: 4px;">
+                📄 Pre-award Instructions
+            </a>
+            <span class="sidebar-text" style="font-size: 0.8em; line-height: 1.4; display: block;">
+                Official guide for RMS360, Roles, and Submission Workflows.
+            </span>
+        </div>
+    </div>
     
     <div style="text-align: center; margin-bottom: 30px;">
       <span style="font-size: 2.5em; display: block; margin-bottom: 10px;">🧬</span>
