@@ -442,6 +442,24 @@
 
     <p><strong>Signalling Role:</strong> Because it is a transmembrane protein, it can act as a bridge, receiving a signal from the hormone outside the cell and transmitting it to G proteins located on the inside of the cell to trigger a biological response, such as insulin secretion.</p>
 
+    <p>In 2026, structural biology classifies the states of GLP-1 and its receptor according to the transition from a disordered free peptide to a structured, active complex.</p>
+
+    <h4>1. Apo State (Inactive GLP-1 Receptor)</h4>
+    <p>The "apo" state refers to the full-length human GLP-1 receptor (GLP-1R) without its natural peptide hormone bound. In this state, the receptor is inactive and adopts a "closed" conformation.</p>
+
+    <figure>
+      <img src="https://github.com/user-attachments/assets/47305852-10d3-4baf-b9eb-f4210695127b" alt="Inactive GLP-1 Receptor">
+      <figcaption>Figure 2. Crystal structure of the full-length receptor in its inactive, peptide-free form. The ECD rests against the transmembrane core.</figcaption>
+    </figure>
+
+    <h4>2. GLP-1 Bound State (Active Complex)</h4>
+    <p>The active state occurs when the natural GLP-1 hormone binds to the receptor, causing the ECD to move into an "up" position and the transmembrane helices to open for signaling.</p>
+
+    <figure>
+      <img src="https://github.com/user-attachments/assets/c7ccc3c1-e101-4e2f-aa84-21924ce761a3" alt="Active GLP-1 Complex">
+      <figcaption>Figure 3. The Active Complex state.</figcaption>
+    </figure>
+
     <h3>Breakthrough in Oral Delivery</h3>
     <p>In 2019, Novo Nordisk achieved another discovery milestone by co-formulating semaglutide with an absorption enhancer called SNAC. This allowed the large peptide molecule to survive stomach acid and be absorbed into the bloodstream, creating Rybelsus, the first oral GLP-1 medication.</p>
     <p><strong>PF-06882961 (Danuglipron)</strong> is an oral, small-molecule GLP-1 receptor agonist developed by Pfizer for the treatment of obesity and type 2 diabetes. Unlike injectable peptide-based GLP-1s like semaglutide, it is a non-peptide molecule designed for oral delivery without the need for complex absorption enhancers.</p>
@@ -456,6 +474,19 @@
     
     <p><strong>LY3502970 (Orforglipron)</strong> represents a significant breakthrough in GLP-1 pharmacology. It is a small-molecule, non-peptide agonist that activates the receptor through a mechanism distinct from the native GLP-1 peptide. </p>
     
+    <div class="callout-box">
+      <strong>Key Difference:</strong> Unlike the native GLP-1 peptide, which is a large molecule that spans the entire extracellular face of the receptor and inserts deep into the transmembrane core, LY3502970 binds in a much more compact, specific pocket.
+    </div>
+
+    <figure>
+      <img src="https://github.com/user-attachments/assets/debb080e-6b56-4333-ac0e-5735abf738ce" alt="Orforglipron Structure">
+      <figcaption>Figure 6. Orforglipron (LY3502970), the first FDA approved oral non-peptide GLP-1 receptor agonist.</figcaption>
+    </figure>
+
+    <p>New oral drugs like orforglipron (expected for 2026 approval) activate the receptor differently than natural GLP-1. They bind to a unique pocket involving the ECD and specific transmembrane helices (TM1, 2, 3, and 7), creating a distinct receptor shape that may lead to more targeted signaling.</p>
+    
+    <p><strong>The "Lid" Mechanism (ECD Role):</strong> A critical feature of its activation is the engagement of the receptor's N-terminal Extracellular Domain (ECD). The ECD effectively clamps down over the small molecule, acting like a "lid" to trap it in the binding pocket, giving a much longer lasting effect.</p>
+
     <figure>
       <img src="https://github.com/user-attachments/assets/879f677e-c173-4d93-8faa-f35ec4a7b9ce" alt="Orforglipron Binding Mechanism">
       <figcaption>Figure 7. Structural basis for GLP-1 receptor activation by Orforglipron (orange). Source: Kawakami et al. [1].</figcaption>
