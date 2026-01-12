@@ -320,7 +320,7 @@
 
     <div class="sidebar-item" style="margin-bottom: 15px;">
         <div style="background-color: #E6F0FF; padding: 12px; border-left: 4px solid #002BFF; border-radius: 4px;">
-            <a href="#" style="font-weight: 700; color: #002BFF; text-decoration: none; display: block; margin-bottom: 4px;">
+            <a href="breakthrough_t1d_post_award.html" style="font-weight: 700; color: #002BFF; text-decoration: none; display: block; margin-bottom: 4px;">
                 📋 Post-Award Instructions and FAQs
             </a>
             <span class="sidebar-text" style="font-size: 0.8em; line-height: 1.4; display: block;">
