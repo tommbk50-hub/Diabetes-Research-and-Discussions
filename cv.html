@@ -1,21 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Thomas Knight | CV</title>
+  <meta charset="UTF-8">
+  <title>Curriculum Vitae | Thomas Knight</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧬</text></svg>">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
   <style>
+    /* --- CORE STYLES --- */
     body {
       margin: 0;
       padding: 0;
-      font-family: 'Open Sans', sans-serif;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
       background-color: #F7F7F7;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
+      color: #333;
+      line-height: 1.6;
     }
-    
-    /* NAV BAR (Matches Main Site) */
+
+    h1, h2, h3, h4 {
+      font-family: 'Montserrat', sans-serif;
+      color: #0B1157; /* Navy */
+    }
+
+    /* --- NAV BAR --- */
     .nav-bar {
       background: #0B1157;
       color: white;
@@ -30,54 +42,169 @@
       color: white;
       text-decoration: none;
       margin-left: 20px;
+      transition: color 0.2s;
     }
     .nav-bar a:hover {
       color: #78DCFF;
     }
 
-    /* HEADER */
-    .header {
+    /* --- HEADER --- */
+    .cv-header {
       background: linear-gradient(135deg, #002BFF 0%, #0020c2 100%);
       color: white;
-      padding: 30px;
+      padding: 60px 20px;
       text-align: center;
       border-bottom: 8px solid #0B1157;
     }
-    .header h1 {
+    .cv-header h1 {
+      color: white;
+      font-size: 2.8em;
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 800;
       text-transform: uppercase;
-      font-size: 2em;
+      letter-spacing: 1px;
+    }
+    .cv-header p {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.2em;
+      margin: 10px 0 0;
+      font-weight: 400;
+      opacity: 0.95;
     }
 
-    /* PDF CONTAINER */
-    .pdf-container {
-      flex: 1;
-      width: 100%;
-      max-width: 1000px;
-      margin: 20px auto;
+    /* --- MAIN CONTAINER --- */
+    .container {
+      max-width: 900px;
+      margin: -40px auto 50px;
       background: white;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 50px;
       border-radius: 8px;
-      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      position: relative;
     }
-    
+
+    /* --- DOWNLOAD BUTTON --- */
     .download-btn {
-        display: block;
-        width: 200px;
-        margin: 20px auto;
-        padding: 12px 20px;
-        background-color: #002BFF;
-        color: white;
-        text-align: center;
-        text-decoration: none;
-        font-weight: 700;
-        border-radius: 30px;
-        font-family: 'Montserrat', sans-serif;
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      background-color: #002BFF;
+      color: white;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 0.85em;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: background 0.2s;
     }
     .download-btn:hover {
-        background-color: #0B1157;
+      background-color: #0B1157;
+    }
+
+    /* --- SECTIONS --- */
+    .section {
+      margin-bottom: 40px;
+    }
+    
+    .section-title {
+      font-size: 1.5em;
+      font-weight: 800;
+      color: #002BFF;
+      border-bottom: 3px solid #78DCFF;
+      padding-bottom: 8px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    /* --- JOB/EDU BLOCKS --- */
+    .job-block {
+      margin-bottom: 25px;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .job-title {
+      font-size: 1.1em;
+      font-weight: 700;
+      color: #0B1157;
+      margin: 0;
+    }
+    .job-meta {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9em;
+      color: #666;
+      font-weight: 600;
+    }
+    .job-company {
+      color: #002BFF;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 8px;
+      color: #444;
+    }
+
+    /* --- SKILLS GRID --- */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    .skill-item {
+      background: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #002BFF;
+      border-radius: 0 4px 4px 0;
+    }
+    .skill-item strong {
+      color: #0B1157;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* --- CONTACT INFO --- */
+    .contact-info {
+      text-align: center;
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #f0f4f8;
+      border-radius: 6px;
+      font-size: 0.95em;
+    }
+    .contact-info a {
+      color: #002BFF;
+      text-decoration: none;
+      font-weight: 600;
+      margin: 0 10px;
+    }
+    .contact-info a:hover { text-decoration: underline; }
+
+    /* --- FOOTER --- */
+    .footer {
+      text-align: center;
+      padding: 30px;
+      background-color: #0B1157;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9em;
+    }
+
+    /* Mobile Tweaks */
+    @media (max-width: 768px) {
+      .container { padding: 30px 20px; width: 90%; margin-top: -20px; }
+      .download-btn { position: static; display: block; text-align: center; margin: 0 auto 30px; width: fit-content; }
+      .cv-header h1 { font-size: 2em; }
+      .job-header { flex-direction: column; }
     }
   </style>
 </head>
@@ -88,15 +215,151 @@
     <a href="https://breakthrought1d.org.uk/" target="_blank">BREAKTHROUGH T1D UK</a>
   </div>
 
-  <div class="header">
-    <h1>Thomas Knight - Curriculum Vitae</h1>
+  <div class="cv-header">
+    <h1>Thomas Knight</h1>
+    <p>MChem, AMRSC | Research Scientist, Data Analyst & Science Communicator</p>
   </div>
 
-  <div class="pdf-container">
-    <embed src="cv.pdf" type="application/pdf" width="100%" height="100%" />
+  <div class="container">
+    
+    <a href="cv.pdf" class="download-btn" target="_blank">📥 Download PDF</a>
+
+    <div class="contact-info">
+      📍 Kent, UK &nbsp;|&nbsp; 
+      <a href="mailto:thomasknight2007@hotmail.com">thomasknight2007@hotmail.com</a> &nbsp;|&nbsp; 
+      <a href="https://www.linkedin.com/in/tom-knight-340784151/" target="_blank">LinkedIn Profile</a>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <p>
+        A highly motivated Research Scientist and Science Communicator with 5+ years of experience in pharmaceutical R&D, including professional work developing GLP-1 diabetes treatments at Pfizer. As an individual living with Type 1 Diabetes (T1D), I am deeply committed to Breakthrough T1D's mission to drive life-changing research.
+      </p>
+      <p>
+        I combine technical expertise (1st Class MChem) with a Google Professional Project Management Certificate and experience coordinating milestones for a $65 million international drug discovery research grant. Passionate about communicating complex scientific research to public audiences, evidenced through posting regular open-science research updates, a peer-reviewed scientific publication, 35+ hours of STEM Ambassadorship volunteering, and a successful science communication YouTube channel.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Key Skills</div>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <strong>Science Communication & Public Engagement</strong>
+          Expert at presenting complex data to diverse audiences via open-science social media (YouTube, X, GitHub).
+        </div>
+        <div class="skill-item">
+          <strong>Stakeholder Engagement</strong>
+          Experience managing high-value accounts and international research collaborations (US-UK READDI-AVIDD grant).
+        </div>
+        <div class="skill-item">
+          <strong>Project Management</strong>
+          Google Certified Professional; experienced in overseeing milestones, budgets, and technical teams.
+        </div>
+        <div class="skill-item">
+          <strong>Data Analysis & Impact Reporting</strong>
+          Proficient in Python and Power BI to track engagement metrics and research outcomes.
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Professional Experience</div>
+
+      <div class="job-block">
+        <div class="job-header">
+          <h3 class="job-title">Senior Account Manager</h3>
+          <span class="job-meta">03/2024 – Present</span>
+        </div>
+        <span class="job-company">Knight Dental Design Ltd, London</span>
+        <ul>
+          <li><strong>Stakeholder Engagement:</strong> Managed top 20 high-value accounts, reducing client churn through proactive engagement and issue resolution (e.g., decreased remake rate from 6% to 2%).</li>
+          <li><strong>Administrative Oversight:</strong> Overhauled the Quality Management System (QMS) to secure 100% DAMAS compliance, demonstrating meticulous attention to detail.</li>
+          <li><strong>Process Improvement:</strong> Implemented digital traceability systems, reducing administrative prep time by 30%.</li>
+          <li><strong>Financial Management:</strong> Oversaw business accounts and reported weekly cash flows to Directors, identifying cost-saving opportunities.</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <div class="job-header">
+          <h3 class="job-title">Research Scientist (PhD) / Project Lead</h3>
+          <span class="job-meta">09/2021 – 03/2024</span>
+        </div>
+        <span class="job-company">University College London (UCL)</span>
+        <ul>
+          <li><strong>Grant Coordination:</strong> Key researcher for a $65M US-UK grant (READDI-AVIDD), coordinating drug discovery milestones between international partners. Contributed to a successful £520k grant for new biophysics equipment.</li>
+          <li><strong>Stakeholder Support:</strong> Prepared weekly project updates for international stakeholders; provided administrative support including drafting technical briefings and recording minutes.</li>
+          <li><strong>Public Engagement:</strong> Championed Open Science by disseminating research updates via social media, translating complex AI-driven drug discovery concepts for non-specialist audiences.</li>
+          <li><strong>Operational Efficiency:</strong> Designed Python-automated data flows reducing sample analysis time by 98%. Used machine learning to plan experiments, reducing timelines from weeks to days.</li>
+        </ul>
+      </div>
+
+      <div class="job-block">
+        <div class="job-header">
+          <h3 class="job-title">Organic Chemistry Undergraduate (Placement)</h3>
+          <span class="job-meta">09/2019 – 09/2020</span>
+        </div>
+        <span class="job-company">Pfizer UK, Chemical R&D Division</span>
+        <ul>
+          <li><strong>Diabetes Research Expertise:</strong> Conducted 12 months of R&D in a cGMP environment focused on the organic synthesis of GLP-1 diabetes treatments.</li>
+          <li><strong>Data Reporting:</strong> Migrated compliance reporting workflows to Power BI, improving decision-making speed by 40%.</li>
+          <li><strong>Public Engagement:</strong> Volunteered as a Pfizer Community Lab Mentor, guiding A-level students through practical science.</li>
+          <li><strong>Process Improvement:</strong> Led a sustainability project reducing chemical waste by 33%. Successfully delivered 5kg of >95% purity drug material ahead of Phase II clinical deadlines.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Involvement & Public Engagement</div>
+      
+      <div class="job-block">
+        <strong style="color:#0B1157;">Founder - 'Practical Cheminformatics' YouTube Channel</strong> (09/2025 – Present)<br>
+        Created video tutorials on Python automation and AI to improve laboratory research productivity. Manage digital content creation and community engagement with a global audience.
+      </div>
+
+      <div class="job-block">
+        <strong style="color:#0B1157;">STEM Ambassador</strong> (09/2019 – Present)<br>
+        Delivered 35+ hours of engagement for STEM UK, presenting to schools to promote science and technology skills. Developed ability to tailor scientific messaging to different age groups.
+      </div>
+
+      <div class="job-block">
+        <strong style="color:#0B1157;">Level 1 Coach, Badminton England</strong> (05/2024 – Present)<br>
+        Develop leadership skills through coaching, creating tailored plans for clients (e.g., managing blood sugars in tournaments for diabetic players).
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+      
+      <div class="job-block">
+        <div class="job-header">
+          <h3 class="job-title">Master's Degree in Chemistry (MChem) - 1st Class Honours</h3>
+          <span class="job-meta">2016 – 2021</span>
+        </div>
+        <span class="job-company">Cardiff University</span>
+        <p>Four-year degree with industrial placement. Managed four research projects focused on chemical sustainability. Published thesis on "Electrochemical Azidocyanation" in <em>Chem. Commun. 2022</em>.</p>
+      </div>
+
+      <div class="job-block">
+        <strong style="color:#0B1157;">A-Levels & GCSEs</strong> | Dartford Grammar School / Colfe's<br>
+        A-Levels: Chemistry (A), Biology (B), Design & Technology (B).<br>
+        GCSEs: 10 A*-B grades.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Certificates</div>
+      <ul style="list-style-type: none; padding: 0;">
+        <li>🔹 <strong>Google Project Management Professional Certificate</strong></li>
+        <li>🔹 <strong>Automating Real-World Tasks with Python</strong> (Google)</li>
+        <li>🔹 <strong>Data Analysis & Visualisation with Python</strong> (IBM)</li>
+        <li>🔹 <strong>Databases and SQL for Data Science</strong> (IBM)</li>
+      </ul>
+    </div>
+
+  </div> <div class="footer">
+    &copy; 2026 Thomas Knight. All rights reserved.<br>
+    <a href="index.html" style="color:#78DCFF; text-decoration:none; font-weight:bold; margin-top:10px; display:inline-block;">Return to Research Article</a>
   </div>
-  
-  <a href="cv.pdf" class="download-btn" download>Download PDF</a>
 
 </body>
 </html>
