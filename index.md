@@ -19,9 +19,9 @@
   body { background-color: #F7F7F7 !important; margin: 0 !important; padding: 0 !important; }
   html { scroll-behavior: smooth; }
 
-  /* --- BRANDING & TYPOGRAPHY --- */
+  /* --- TYPOGRAPHY (MATCHING BREAKTHROUGH T1D) --- */
   .custom-body {
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif; /* Body Text */
     color: #333;
     background-color: #F7F7F7;
     line-height: 1.7;
@@ -29,23 +29,25 @@
   }
 
   h1, h2, h3, h4 { 
-    color: #0B1157; 
-    font-family: 'Montserrat', sans-serif;
+    color: #0B1157; /* Navy */
+    font-family: 'Montserrat', sans-serif; /* Headings */
     margin-top: 45px;
   }
 
   h3 {
-    color: #002BFF;
-    border-bottom: 3px solid #78DCFF;
+    color: #002BFF; /* Breakthrough Blue */
+    border-bottom: 3px solid #78DCFF; /* Cyan Highlight */
     padding-bottom: 10px;
     font-size: 1.7em;
-    font-weight: 700;
+    font-weight: 800; /* Bolder to match news style */
+    text-transform: none; /* Keep mixed case for readability */
   }
   
   h4 {
     font-size: 1.3em;
     font-weight: 700;
     color: #0B1157;
+    margin-bottom: 15px;
   }
 
   /* --- HEADER WITH GRADIENT --- */
@@ -73,12 +75,12 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
     opacity: 0.95;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0;
     color: white;
   }
 
-  /* --- PAGE CONTAINER FOR SIDEBARS --- */
+  /* --- PAGE CONTAINER --- */
   .page-container {
     display: flex;
     justify-content: center;
@@ -93,7 +95,7 @@
 
   /* --- MAIN CONTENT CARD --- */
   .main-content {
-    flex: 1; /* Takes up remaining space */
+    flex: 1;
     max-width: 800px;
     background: white;
     padding: 70px;
@@ -103,7 +105,7 @@
 
   /* --- SIDEBAR STYLES --- */
   .sidebar {
-    width: 250px;
+    width: 280px; /* Slightly wider to accommodate text */
     background: white;
     padding: 25px;
     border-radius: 8px;
@@ -116,57 +118,43 @@
 
   .sidebar-title {
     font-size: 1.1em;
-    font-weight: 700;
+    font-weight: 800;
     color: #0B1157;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #f0f0f0;
+    text-transform: uppercase;
   }
 
   .sidebar-item {
-    margin-bottom: 25px;
-    text-align: center;
+    margin-bottom: 30px;
+    text-align: left;
   }
 
-  .sidebar-icon {
-    font-size: 2.5em;
+  .sidebar-item h5 {
+    font-size: 0.95em;
     color: #002BFF;
-    margin-bottom: 10px;
-    display: block;
-  }
-  
-  .sidebar-stat {
-    font-size: 1.8em;
-    font-weight: 800;
-    color: #002BFF;
-    display: block;
-    line-height: 1;
+    margin: 0 0 8px 0;
+    font-weight: 700;
+    line-height: 1.3;
   }
 
   .sidebar-text {
-    font-size: 0.9em;
+    font-size: 0.85em;
     color: #555;
     font-family: 'Open Sans', sans-serif;
     margin-top: 5px;
+    line-height: 1.5;
   }
   
-  .sidebar-image {
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  
-  .highlight-badge {
-    background-color: #0B1157;
-    color: white;
-    font-size: 0.75em;
-    font-weight: 700;
-    padding: 4px 10px;
-    border-radius: 12px;
-    display: inline-block;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+  .sidebar-citation {
+    font-size: 0.7em;
+    color: #888;
+    font-style: italic;
+    margin-top: 8px;
+    display: block;
+    border-left: 2px solid #ddd;
+    padding-left: 8px;
   }
 
   /* --- NAVIGATION BAR --- */
@@ -194,7 +182,7 @@
     border-bottom: 2px solid #78DCFF;
   }
 
-  /* --- "PRINT PDF" BUTTON --- */
+  /* --- PRINT BUTTON --- */
   .print-btn {
     background: white;
     color: #002BFF;
@@ -273,14 +261,10 @@
   @media (max-width: 1100px) {
     .page-container { flex-direction: column; align-items: center; margin-top: -30px; }
     .main-content { width: 100%; padding: 40px 30px; order: 1; }
-    .sidebar { width: 100%; max-width: 800px; margin-bottom: 30px; position: static; order: 2; display: flex; justify-content: space-around; flex-wrap: wrap; }
-    .sidebar-item { flex: 1 1 30%; margin: 10px; }
+    .sidebar { width: 100%; max-width: 800px; margin-bottom: 30px; position: static; order: 2; display: flex; justify-content: space-around; flex-wrap: wrap; gap: 20px; }
+    .sidebar-item { flex: 1 1 30%; margin: 0; }
     .custom-header h1 { font-size: 2em; }
     .nav-bar { text-align: center; padding: 15px; }
-  }
-  @media (max-width: 768px) {
-    .sidebar { display: block; }
-    .print-btn { float: none; display: block; width: 100%; margin: 20px 0; text-align: center; }
   }
 </style>
 
@@ -301,24 +285,18 @@
 <div class="page-container">
 
   <div class="sidebar">
-    <div class="sidebar-title">Global Research Impact</div>
+    <div class="sidebar-title">Global Impact</div>
     
-    <div class="sidebar-item">
-      <span class="sidebar-icon">🧬</span>
-      <span class="sidebar-stat">400+</span>
+    <div style="text-align: center; margin-bottom: 30px;">
+      <span style="font-size: 2.5em; display: block; margin-bottom: 10px;">🧬</span>
+      <span style="font-size: 1.8em; font-weight: 800; color: #002BFF; display: block;">400+</span>
       <span class="sidebar-text">Active research studies funded worldwide</span>
     </div>
     
-    <div class="sidebar-item">
-      <span class="sidebar-icon">🌍</span>
-      <span class="sidebar-stat">21</span>
+    <div style="text-align: center; margin-bottom: 30px;">
+      <span style="font-size: 2.5em; display: block; margin-bottom: 10px;">🌍</span>
+      <span style="font-size: 1.8em; font-weight: 800; color: #002BFF; display: block;">21</span>
       <span class="sidebar-text">Countries where research is taking place</span>
-    </div>
-    
-    <div class="sidebar-item">
-      <span class="sidebar-icon">🔬</span>
-      <span class="sidebar-stat">20+</span>
-      <span class="sidebar-text">Research projects currently in the UK</span>
     </div>
   </div>
 
@@ -392,12 +370,6 @@
       </li>
     </ul>
 
-    <p><strong>Key Structural Features</strong></p>
-    <ul>
-      <li><strong>Histidine at Position 7:</strong> The free N-terminal amino acid (Histidine) is vital for the hormone’s insulin-stimulating activity.</li>
-      <li><strong>DPP-4 Cleavage Site:</strong> The bond between Alanine-8 and Glutamic acid-9 is the primary target for the enzyme DPP-4. This enzyme cleaves the peptide within 1–2 minutes of secretion, rendering the hormone inactive and explaining its very short natural half-life.</li>
-    </ul>
-
     <figure>
       <img src="https://github.com/user-attachments/assets/c6fdc854-a7f6-45ba-bd26-974c7585d554" alt="GLP-1 Structure">
       <figcaption>Figure 1. Glucagon-like peptide 1 (GLP-1) structure regulating insulin secretion. Generated with PyMol from PDB ID: 1D0R.</figcaption>
@@ -411,75 +383,10 @@
     </div>
 
     <p><strong>Signalling Role:</strong> Because it is a transmembrane protein, it can act as a bridge, receiving a signal from the hormone outside the cell and transmitting it to G proteins located on the inside of the cell to trigger a biological response, such as insulin secretion.</p>
-    <p><strong>Localisation:</strong> It is primarily found on the surface (plasma membrane) of various cell types, including pancreatic beta cells and certain neurons in the brain.</p>
-
-    <h3>Main Structural Components</h3>
-    <p>The receptor is composed of two primary functional domains that work cooperatively:</p>
-    <ul>
-      <li><strong>Extracellular Domain (ECD):</strong> A large N-terminal "cap" (roughly 120 amino acids) located outside the cell. It contains a "secretin recognition fold" stabilized by three conserved disulfide bonds. Its primary role is to capture the C-terminal end of the GLP-1 hormone.</li>
-      <li><strong>Transmembrane Domain (TMD):</strong> The core of the receptor, consisting of seven alpha-helices (TM1–TM7) that span the cell membrane. This domain contains the binding pocket for the N-terminal part of the GLP-1 hormone, which is responsible for triggering the receptor's activity.</li>
-      <li><strong>Intracellular Loops (ICLs):</strong> These loops connect the transmembrane helices on the inside of the cell and are the sites where the receptor interacts with G proteins to start cellular signaling.</li>
-    </ul>
-
-    <p>In 2026, structural biology classifies the states of GLP-1 and its receptor according to the transition from a disordered free peptide to a structured, active complex.</p>
-
-    <h4>1. Apo State (Inactive GLP-1 Receptor)</h4>
-    <p>The "apo" state refers to the full-length human GLP-1 receptor (GLP-1R) without its natural peptide hormone bound. In this state, the receptor is inactive and adopts a "closed" conformation.</p>
-
-    <figure>
-      <img src="https://github.com/user-attachments/assets/47305852-10d3-4baf-b9eb-f4210695127b" alt="Inactive GLP-1 Receptor">
-      <figcaption>Figure 2. Crystal structure of the full-length receptor in its inactive, peptide-free form. The ECD rests against the transmembrane core.</figcaption>
-    </figure>
-
-    <h4>2. GLP-1 Bound State (Active Complex)</h4>
-    <p>The active state occurs when the natural GLP-1 hormone binds to the receptor, causing the ECD to move into an "up" position and the transmembrane helices to open for signaling.</p>
-
-    <figure>
-      <img src="https://github.com/user-attachments/assets/c7ccc3c1-e101-4e2f-aa84-21924ce761a3" alt="Active GLP-1 Complex">
-      <figcaption>Figure 3. The Active Complex state.</figcaption>
-    </figure>
-
-    <h3>The Two-Domain Binding Mechanism</h3>
-    <ol>
-      <li><strong>Capture:</strong> The C-terminal region of the GLP-1 hormone first binds to the ECD, which acts like a fishing hook to secure the hormone.</li>
-      <li><strong>Activation:</strong> This initial binding causes the receptor to change shape, allowing the N-terminal end of the hormone to insert deep into the <strong>TMD binding pocket.</strong> This insertion pushes the transmembrane helices apart, creating an opening on the inside of the cell for G-protein coupling.</li>
-    </ol>
-
-    <h3>Modern Structural Insights (2025–2026)</h3>
-    <ul>
-      <li><strong>Dynamic Signaling Hubs:</strong> 2025 research has shown that the GLP-1 receptor does not just stay on the cell surface; once activated, it can move inside the cell to form specialized "signaling hubs" at contact sites between different organelles, such as the mitochondria and endoplasmic reticulum, to enhance insulin secretion.</li>
-      <li><strong>Inactive State Structure:</strong> In the absence of a hormone, the receptor maintains a "closed" conformation where the ECD rests against the TMD, effectively blocking the activation site until a hormone arrives.</li>
-    </ul>
-
-    <h3>Semaglutide: An artificial GLP-1 analogue</h3>
-    <p>Semaglutide was discovered by a research team at the Danish pharmaceutical company Novo Nordisk, led by scientists including Jesper Lau, Thomas Kruse, and Paw Bloch. Its discovery was a process of "rational protein engineering," building on the success of their previous drug, liraglutide (Victoza).</p>
-    <p>In the early 2000s, Novo Nordisk had already developed liraglutide, which was the first human-based GLP-1 analog suitable for once-daily dosing. However, researchers wanted a "once-weekly" option to improve patient adherence. Semaglutide was engineered specifically to extend the half-life from liraglutide’s ~13 hours to approximately 7 days.</p>
-
-    <h3>Strategic Structural Modifications</h3>
-    <p>To achieve this long-lasting effect, the team made three critical structural changes to the native human GLP-1 molecule (achieving 94% homology):</p>
-    <ul>
-      <li><strong>DPP-4 Protection:</strong> They replaced the amino acid alanine at position 8 with alpha-aminoisobutyric acid (Aib). This specific change prevents the enzyme DPP-4 from quickly breaking the drug down, which is what happens to natural GLP-1 within minutes.</li>
-      <li><strong>Albumin Binding:</strong> They swapped liraglutide’s 16-carbon fatty acid for a 18-carbon fatty diacid. This allowed the drug to bind more tightly but reversibly to albumin (a protein in the blood), which protects it from being filtered out by the kidneys.</li>
-      <li><strong>Site-Specific Attachment:</strong> They replaced lysine at position 34 with arginine to ensure the fatty acid chain only attached to the lysine at position 26, optimizing the drug's stability.</li>
-    </ul>
-
-    <figure>
-      <img src="https://github.com/user-attachments/assets/74c4f730-b51c-43e8-b142-2fda5c725589" alt="Semaglutide vs GLP-1">
-      <figcaption>Figure 4. Overlay of GLP1-R-Semaglutide (light teal/orange) with GLP-1 (dark teal/yellow).</figcaption>
-    </figure>
 
     <h3>Breakthrough in Oral Delivery</h3>
     <p>In 2019, Novo Nordisk achieved another discovery milestone by co-formulating semaglutide with an absorption enhancer called SNAC. This allowed the large peptide molecule to survive stomach acid and be absorbed into the bloodstream, creating Rybelsus, the first oral GLP-1 medication.</p>
     <p><strong>PF-06882961 (Danuglipron)</strong> is an oral, small-molecule GLP-1 receptor agonist developed by Pfizer for the treatment of obesity and type 2 diabetes. Unlike injectable peptide-based GLP-1s like semaglutide, it is a non-peptide molecule designed for oral delivery without the need for complex absorption enhancers.</p>
-
-    <h4>Key Clinical Findings:</h4>
-    <ul>
-      <li><strong>Efficacy:</strong> Phase 2b trials (NCT04707313) in adults with obesity showed statistically significant weight loss. Patients receiving twice-daily doses achieved mean weight reductions of 8% to 13% after 32 weeks.</li>
-      <li><strong>Tolerability Issues:</strong> Despite its efficacy, the twice-daily formulation faced high discontinuation rates—greater than 50% in some cohorts—primarily due to gastrointestinal side effects like nausea, vomiting, and diarrhea.</li>
-      <li><strong>Comparison to Peptides:</strong> Preclinical and Phase 1 data indicated that danuglipron had a glucose-lowering and weight-loss efficacy comparable to injectable GLP-1 agonists.</li>
-    </ul>
-
-    <p>In April 2025, Pfizer officially discontinued the clinical development of danuglipron [2]. The decision followed a single case of potential drug-induced liver injury (DILI) in an asymptomatic participant during dose-optimization studies for a once-daily formulation.</p>
 
     <figure>
       <img src="https://github.com/user-attachments/assets/15413f62-6cb3-44f0-8e44-d40449f9ae9b" alt="Danuglipron Bound">
@@ -491,19 +398,6 @@
     
     <p><strong>LY3502970 (Orforglipron)</strong> represents a significant breakthrough in GLP-1 pharmacology. It is a small-molecule, non-peptide agonist that activates the receptor through a mechanism distinct from the native GLP-1 peptide. </p>
     
-    <div class="callout-box">
-      <strong>Key Difference:</strong> Unlike the native GLP-1 peptide, which is a large molecule that spans the entire extracellular face of the receptor and inserts deep into the transmembrane core, LY3502970 binds in a much more compact, specific pocket.
-    </div>
-
-    <figure>
-      <img src="https://github.com/user-attachments/assets/debb080e-6b56-4333-ac0e-5735abf738ce" alt="Orforglipron Structure">
-      <figcaption>Figure 6. Orforglipron (LY3502970), the first FDA approved oral non-peptide GLP-1 receptor agonist.</figcaption>
-    </figure>
-
-    <p>New oral drugs like orforglipron (expected for 2026 approval) activate the receptor differently than natural GLP-1. They bind to a unique pocket involving the ECD and specific transmembrane helices (TM1, 2, 3, and 7), creating a distinct receptor shape that may lead to more targeted signaling.</p>
-    
-    <p><strong>The "Lid" Mechanism (ECD Role):</strong> A critical feature of its activation is the engagement of the receptor's N-terminal Extracellular Domain (ECD). The ECD effectively clamps down over the small molecule, acting like a "lid" to trap it in the binding pocket, giving a much longer lasting effect.</p>
-
     <figure>
       <img src="https://github.com/user-attachments/assets/879f677e-c173-4d93-8faa-f35ec4a7b9ce" alt="Orforglipron Binding Mechanism">
       <figcaption>Figure 7. Structural basis for GLP-1 receptor activation by Orforglipron (orange). Source: Kawakami et al. [1].</figcaption>
@@ -522,18 +416,37 @@
   </div>
 
   <div class="sidebar">
-    <div class="sidebar-title">Research Highlight</div>
-    <span class="highlight-badge">Cure Research</span>
+    <div class="sidebar-title">Progress 2026 & Beyond</div>
     
     <div class="sidebar-item">
-      <img src="microscopy.jpg" alt="Fluorescent microscopy of stem cell-derived beta cells" class="sidebar-image" style="box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-      
-      <h4 style="margin: 15px 0 10px; font-size: 1.1em; color: #0B1157;">Promising stem cell therapy given green light</h4>
-      
-      <p class="sidebar-text" style="text-align: left;">
-        Professor Doug Melton's lab-grown beta cells are now being tested in clinical trials. This pioneering work, funded by Breakthrough T1D, aims to transplant functional, insulin-producing cells into people with type 1 diabetes.
+      <h5>Affordable Insulin</h5>
+      <p class="sidebar-text">
+        Civica Rx's insulin glargine-yfgn (interchangeable with Lantus) became available on Jan 1, 2026, offering a low-cost option (under $55 for five pens) for all, regardless of insurance.
       </p>
+      <span class="sidebar-citation">Ref: Civica Rx Press Release (2026)</span>
     </div>
+
+    <div class="sidebar-item">
+      <h5>Engineered Islets</h5>
+      <p class="sidebar-text">
+        <strong>Sana Biotechnology</strong> showed promising data in late 2024/early 2025 with transplanted islets (from deceased donors) that produce insulin without needing immunosuppression.
+      </p>
+      <span class="sidebar-citation">Ref: Sana Biotechnology, Press Release (Jan 2025)</span>
+      
+      <p class="sidebar-text" style="margin-top:15px;">
+        <strong>Stem Cell Research:</strong> Studies, like one involving a Chinese patient in early 2025, show success using reprogrammed stem cells to create islet cells for transplantation, potentially curing T1D.
+      </p>
+      <span class="sidebar-citation">Ref: Wang, S. et al. Cell 187, 6152–6164 (2024)</span>
+    </div>
+
+    <div class="sidebar-item">
+      <h5>"Smart" Insulins</h5>
+      <p class="sidebar-text">
+        Researchers funded by the Type 1 Diabetes Grand Challenge developed novel insulin-glucagon molecules designed to prevent dangerous low blood sugars (hypoglycemia).
+      </p>
+      <span class="sidebar-citation">Ref: Weiss, M.A. et al. ACS Pharmacol. Transl. Sci. (2025)</span>
+    </div>
+    
   </div>
 
 </div> <div class="custom-footer">
