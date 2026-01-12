@@ -156,6 +156,17 @@
     border-left: 2px solid #ddd;
     padding-left: 8px;
   }
+  
+  /* Sidebar Links */
+  .sidebar-citation a {
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .sidebar-citation a:hover {
+    color: #002BFF;
+    text-decoration: underline;
+  }
 
   /* --- NAVIGATION BAR --- */
   .nav-bar {
@@ -423,7 +434,9 @@
       <p class="sidebar-text">
         Civica Rx's insulin glargine-yfgn (interchangeable with Lantus) became available on Jan 1, 2026, offering a low-cost option (under $55 for five pens) for all, regardless of insurance.
       </p>
-      <span class="sidebar-citation">Ref: Civica Rx Press Release (2026)</span>
+      <span class="sidebar-citation">
+        <a href="https://www.breakthrought1d.org/news-and-updates/civica-long-acting-insulin-available-on-january-1-2026/" target="_blank">Ref: Civica Rx Press Release (2026)</a>
+      </span>
     </div>
 
     <div class="sidebar-item">
@@ -431,12 +444,16 @@
       <p class="sidebar-text">
         <strong>Sana Biotechnology</strong> showed promising data in late 2024/early 2025 with transplanted islets (from deceased donors) that produce insulin without needing immunosuppression.
       </p>
-      <span class="sidebar-citation">Ref: Sana Biotechnology, Press Release (Jan 2025)</span>
+      <span class="sidebar-citation">
+        <a href="https://ir.sana.com/news-releases/news-release-details/sana-biotechnology-announces-publication-new-england-journal/" target="_blank">Ref: Sana Biotechnology, NEJM (2025)</a>
+      </span>
       
       <p class="sidebar-text" style="margin-top:15px;">
-        <strong>Stem Cell Research:</strong> Studies, like one involving a Chinese patient in early 2025, show success using reprogrammed stem cells to create islet cells for transplantation, potentially curing T1D.
+        <strong>Stem Cell Success:</strong> A Chinese patient study (early 2025) demonstrated success using reprogrammed stem cells to create islet cells for transplantation, potentially curing T1D.
       </p>
-      <span class="sidebar-citation">Ref: Wang, S. et al. Cell 187, 6152–6164 (2024)</span>
+      <span class="sidebar-citation">
+        <a href="https://www.cell.com/cell/fulltext/S0092-8674(24)00966-2" target="_blank">Ref: Wang, S. et al. Cell 187 (2024)</a>
+      </span>
     </div>
 
     <div class="sidebar-item">
@@ -444,7 +461,9 @@
       <p class="sidebar-text">
         Researchers funded by the Type 1 Diabetes Grand Challenge developed novel insulin-glucagon molecules designed to prevent dangerous low blood sugars (hypoglycemia).
       </p>
-      <span class="sidebar-citation">Ref: Weiss, M.A. et al. ACS Pharmacol. Transl. Sci. (2025)</span>
+      <span class="sidebar-citation">
+        <a href="https://pubs.acs.org/doi/10.1021/acsptsci.5c00362" target="_blank">Ref: Weiss, M.A. et al. ACS Pharmacol. Transl. Sci. (2025)</a>
+      </span>
     </div>
     
   </div>
