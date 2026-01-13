@@ -342,7 +342,7 @@
 
     <div class="sidebar-item" style="border-bottom: 2px solid #f0f0f0; padding-bottom: 20px; margin-bottom: 25px;">
         <div style="background-color: #E6F0FF; padding: 12px; border-left: 4px solid #002BFF; border-radius: 4px;">
-            <a href="#" style="font-weight: 700; color: #002BFF; text-decoration: none; display: block; margin-bottom: 4px;">
+            <a href="https://www.breakthrought1d.org/wp-content/uploads/2024/07/granthandbook.pdf" target="_blank" style="font-weight: 700; color: #002BFF; text-decoration: none; display: block; margin-bottom: 4px;">
                 📘 Grant Handbook
             </a>
             <span class="sidebar-text" style="font-size: 0.8em; line-height: 1.4; display: block;">
