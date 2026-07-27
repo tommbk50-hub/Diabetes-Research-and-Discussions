@@ -70,20 +70,35 @@ driver.quit()
 if all_new_trials:
     print(f"Success! Found {len(all_new_trials)} trials across all terms. Sending Discord alert...")
     
-    # Format the message for Discord Markdown
-    msg = "🚨 **Clinical Trial Alert**\n\n"
-    for trial in all_new_trials:
-        msg += f"• **{trial['Keyword']}**: {trial['Study Title']}\n<{trial['Link']}>\n\n"
+    messages = []
+    current_msg = "🚨 **Clinical Trial Alert**\n\n"
     
-    try:
-        # Send HTTP POST request to Discord Webhook
-        response = requests.post(DISCORD_WEBHOOK_URL, json={"content": msg})
+    for trial in all_new_trials:
+        trial_text = f"• **{trial['Keyword']}**: {trial['Study Title']}\n<{trial['Link']}>\n\n"
         
-        if response.status_code == 204:
-            print("Alert sent successfully!")
+        # If adding the next trial pushes us near the 2000 character limit, start a new message
+        if len(current_msg) + len(trial_text) > 1900:
+            messages.append(current_msg)
+            current_msg = trial_text
         else:
-            print(f"Failed to send alert. Status code: {response.status_code}")
-    except Exception as e:
-        print(f"Failed to send Discord message: {e}")
+            current_msg += trial_text
+            
+    # Append whatever is left in the final message
+    if current_msg:
+        messages.append(current_msg)
+    
+    # Send all message chunks to Discord
+    for m in messages:
+        try:
+            response = requests.post(DISCORD_WEBHOOK_URL, json={"content": m})
+            if response.status_code in [200, 204]:
+                print("Alert chunk sent successfully!")
+            else:
+                print(f"Failed to send alert. Status code: {response.status_code}")
+            
+            # Brief pause to respect Discord's rate limits
+            time.sleep(1)
+        except Exception as e:
+            print(f"Failed to send Discord message: {e}")
 else:
     print("No trials found for any keywords. No alert sent.")
