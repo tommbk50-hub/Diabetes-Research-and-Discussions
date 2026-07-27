@@ -88,17 +88,22 @@ if all_new_trials:
         messages.append(current_msg)
     
     # Send all message chunks to Discord
+headers = {
+        "Content-Type": "application/json",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+
+    # Send all message chunks to Discord
     for m in messages:
         try:
-            response = requests.post(DISCORD_WEBHOOK_URL, json={"content": m})
+            response = requests.post(DISCORD_WEBHOOK_URL, json={"content": m}, headers=headers)
             if response.status_code in [200, 204]:
                 print("Alert chunk sent successfully!")
             else:
                 print(f"Failed to send alert. Status code: {response.status_code}")
+                print(f"Discord error details: {response.text}")
             
             # Brief pause to respect Discord's rate limits
             time.sleep(1)
         except Exception as e:
             print(f"Failed to send Discord message: {e}")
-else:
-    print("No trials found for any keywords. No alert sent.")
