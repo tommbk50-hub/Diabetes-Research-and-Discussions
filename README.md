@@ -22,6 +22,15 @@ The repo uses **GitHub Pages**, GitHub's free website hosting service.
 
 To update the site, edit a file and commit it. You don't have to run a server or build anything yourself.
 
+### Grant Q&A chatbot (Chatbase)
+
+The home page includes an AI chat assistant from [Chatbase](https://www.chatbase.co/). It answers questions about grant applications.
+
+- **How it is added.** Near the bottom of `index.md`, a short script sets `window.chatbaseConfig` with the bot's ID and loads Chatbase's `embed.min.js`. A second script opens the chat window automatically 2 seconds after the page loads, so visitors see it straight away.
+- **Where its answers come from.** The bot is set up and trained in the Chatbase dashboard, not in this repo. It is meant to draw on the grant material that the site links to, such as the pre-award and post-award instructions, the grant roadmap and the grant handbook.
+- **How it helps applicants.** Applicants can ask plain-language questions, such as "What do I need to submit before the deadline?" or "What reports are due after an award?" The bot points them to the relevant guidance, so they don't have to read through long documents or wait for an email reply from the research office.
+- **Keeping it accurate.** If the grant documents change, update the bot's sources in Chatbase as well. Otherwise it may give outdated answers. Applicants should check important details against the official Breakthrough T1D guidance.
+
 ### Bonus: automated clinical trial alerts
 
 The repo also has a background job that is separate from the webpage:
